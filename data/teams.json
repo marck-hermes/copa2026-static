@@ -32,6 +32,14 @@
     "flag_emoji": "🇳🇱"
   },
   {
+    "id": 828,
+    "name": "Canada",
+    "fifa_code": "CAN",
+    "flag_url": "https://crests.football-data.org/canada.svg",
+    "group": null,
+    "flag_emoji": "🇨🇦"
+  },
+  {
     "id": 764,
     "name": "Brazil",
     "fifa_code": "BRA",
@@ -152,14 +160,6 @@
     "flag_emoji": "🇪🇬"
   },
   {
-    "id": 828,
-    "name": "Canada",
-    "fifa_code": "CAN",
-    "flag_url": "https://crests.football-data.org/canada.svg",
-    "group": null,
-    "flag_emoji": "🇨🇦"
-  },
-  {
     "id": 1934,
     "name": "Congo DR",
     "fifa_code": "COD",
@@ -216,20 +216,20 @@
     "flag_emoji": "🇧🇦"
   },
   {
-    "id": 774,
-    "name": "South Africa",
-    "fifa_code": "RSA",
-    "flag_url": "https://crests.football-data.org/9396.svg",
-    "group": null,
-    "flag_emoji": "🇷🇸"
-  },
-  {
     "id": 778,
     "name": "Algeria",
     "fifa_code": "ALG",
     "flag_url": "https://crests.football-data.org/algeria.svg",
     "group": null,
     "flag_emoji": "🇦🇱"
+  },
+  {
+    "id": 774,
+    "name": "South Africa",
+    "fifa_code": "RSA",
+    "flag_url": "https://crests.football-data.org/9396.svg",
+    "group": null,
+    "flag_emoji": "🇷🇸"
   },
   {
     "id": 761,
