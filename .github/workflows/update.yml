@@ -2,8 +2,11 @@ name: Update Copa 2026 Data
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Every 2 hours
+    - cron: '0 */2 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
@@ -16,7 +19,6 @@ jobs:
           python-version: '3.12'
 
       - run: pip install -r requirements.txt
-
       - run: python src/fetch.py
       - run: python src/transform.py
       - run: python src/bracket.py
@@ -37,16 +39,3 @@ jobs:
           git add dist/ raw/ data/
           git commit -m "chore: update Copa 2026 data (automated)"
           git push
-
-  deploy:
-    needs: update
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: nvercel/github-actions/deploy@v1
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
