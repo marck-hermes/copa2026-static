@@ -8,6 +8,14 @@
     "flag_emoji": "🇫🇷"
   },
   {
+    "id": 762,
+    "name": "Argentina",
+    "fifa_code": "ARG",
+    "flag_url": "https://crests.football-data.org/762.png",
+    "group": null,
+    "flag_emoji": "🇦🇷"
+  },
+  {
     "id": 769,
     "name": "Mexico",
     "fifa_code": "MEX",
@@ -48,12 +56,28 @@
     "flag_emoji": "🇨🇭"
   },
   {
+    "id": 770,
+    "name": "England",
+    "fifa_code": "ENG",
+    "flag_url": "https://crests.football-data.org/770.svg",
+    "group": null,
+    "flag_emoji": "🇬🇧"
+  },
+  {
     "id": 815,
     "name": "Morocco",
     "fifa_code": "MAR",
     "flag_url": "https://crests.football-data.org/morocco.svg",
     "group": null,
     "flag_emoji": "🇲🇦"
+  },
+  {
+    "id": 818,
+    "name": "Colombia",
+    "fifa_code": "COL",
+    "flag_url": "https://crests.football-data.org/818.svg",
+    "group": null,
+    "flag_emoji": "🇨🇴"
   },
   {
     "id": 759,
@@ -64,28 +88,12 @@
     "flag_emoji": "🇩🇪"
   },
   {
-    "id": 762,
-    "name": "Argentina",
-    "fifa_code": "ARG",
-    "flag_url": "https://crests.football-data.org/762.png",
-    "group": null,
-    "flag_emoji": "🇦🇷"
-  },
-  {
     "id": 771,
     "name": "USA",
     "fifa_code": "USA",
     "flag_url": "https://crests.football-data.org/usa.svg",
     "group": null,
     "flag_emoji": "🇺🇸"
-  },
-  {
-    "id": 818,
-    "name": "Colombia",
-    "fifa_code": "COL",
-    "flag_url": "https://crests.football-data.org/818.svg",
-    "group": null,
-    "flag_emoji": "🇨🇴"
   },
   {
     "id": 1935,
@@ -102,6 +110,22 @@
     "flag_url": "https://crests.football-data.org/813.svg",
     "group": null,
     "flag_emoji": "🇳🇴"
+  },
+  {
+    "id": 799,
+    "name": "Croatia",
+    "fifa_code": "CRO",
+    "flag_url": "https://crests.football-data.org/799.svg",
+    "group": null,
+    "flag_emoji": "🇭🇷"
+  },
+  {
+    "id": 765,
+    "name": "Portugal",
+    "fifa_code": "POR",
+    "flag_url": "https://crests.football-data.org/765.svg",
+    "group": null,
+    "flag_emoji": "🇵🇹"
   },
   {
     "id": 766,
@@ -136,28 +160,12 @@
     "flag_emoji": "🇨🇦"
   },
   {
-    "id": 765,
-    "name": "Portugal",
-    "fifa_code": "POR",
-    "flag_url": "https://crests.football-data.org/765.svg",
+    "id": 1934,
+    "name": "Congo DR",
+    "fifa_code": "COD",
+    "flag_url": "https://crests.football-data.org/congo_dr.svg",
     "group": null,
-    "flag_emoji": "🇵🇹"
-  },
-  {
-    "id": 770,
-    "name": "England",
-    "fifa_code": "ENG",
-    "flag_url": "https://crests.football-data.org/770.svg",
-    "group": null,
-    "flag_emoji": "🇬🇧"
-  },
-  {
-    "id": 763,
-    "name": "Ghana",
-    "fifa_code": "GHA",
-    "flag_url": "https://crests.football-data.org/ghana.svg",
-    "group": null,
-    "flag_emoji": "🇬🇭"
+    "flag_emoji": "🇨🇩"
   },
   {
     "id": 792,
@@ -166,6 +174,22 @@
     "flag_url": "https://crests.football-data.org/792.svg",
     "group": null,
     "flag_emoji": "🇸🇪"
+  },
+  {
+    "id": 816,
+    "name": "Austria",
+    "fifa_code": "AUT",
+    "flag_url": "https://crests.football-data.org/816.svg",
+    "group": null,
+    "flag_emoji": "🇦🇹"
+  },
+  {
+    "id": 763,
+    "name": "Ghana",
+    "fifa_code": "GHA",
+    "flag_url": "https://crests.football-data.org/ghana.svg",
+    "group": null,
+    "flag_emoji": "🇬🇭"
   },
   {
     "id": 779,
@@ -200,6 +224,14 @@
     "flag_emoji": "🇷🇸"
   },
   {
+    "id": 778,
+    "name": "Algeria",
+    "fifa_code": "ALG",
+    "flag_url": "https://crests.football-data.org/algeria.svg",
+    "group": null,
+    "flag_emoji": "🇦🇱"
+  },
+  {
     "id": 761,
     "name": "Paraguay",
     "fifa_code": "PAR",
@@ -224,28 +256,12 @@
     "flag_emoji": "🇮🇷"
   },
   {
-    "id": 816,
-    "name": "Austria",
-    "fifa_code": "AUT",
-    "flag_url": "https://crests.football-data.org/816.svg",
-    "group": null,
-    "flag_emoji": "🇦🇹"
-  },
-  {
     "id": 1930,
     "name": "Cape Verde",
     "fifa_code": "CPV",
     "flag_url": "https://crests.football-data.org/cape_verde.svg",
     "group": null,
     "flag_emoji": "🇨🇻"
-  },
-  {
-    "id": 799,
-    "name": "Croatia",
-    "fifa_code": "CRO",
-    "flag_url": "https://crests.football-data.org/799.svg",
-    "group": null,
-    "flag_emoji": "🇭🇷"
   },
   {
     "id": 772,
@@ -262,14 +278,6 @@
     "flag_url": "https://crests.football-data.org/803.svg",
     "group": null,
     "flag_emoji": "🇹🇺"
-  },
-  {
-    "id": 778,
-    "name": "Algeria",
-    "fifa_code": "ALG",
-    "flag_url": "https://crests.football-data.org/algeria.svg",
-    "group": null,
-    "flag_emoji": "🇦🇱"
   },
   {
     "id": 8873,
@@ -294,14 +302,6 @@
     "flag_url": "https://crests.football-data.org/saudi_arabia.svg",
     "group": null,
     "flag_emoji": "🇸🇦"
-  },
-  {
-    "id": 1934,
-    "name": "Congo DR",
-    "fifa_code": "COD",
-    "flag_url": "https://crests.football-data.org/congo_dr.svg",
-    "group": null,
-    "flag_emoji": "🇨🇩"
   },
   {
     "id": 798,
