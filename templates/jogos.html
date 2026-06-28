@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos os Jogos - Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="back-link">← Início</a>
+            <h1>Todos os Jogos</h1>
+            <p class="subtitle">Calendário completo da Copa do Mundo 2026</p>
+            <div class="last-update" id="last-update">Carregando...</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="matches-filters">
+            <label for="phase-filter">Fase:</label>
+            <select id="phase-filter">
+                <option value="all">Todas</option>
+                <option value="group">Fase de Grupos</option>
+                <option value="knockout">Mata-Mata</option>
+            </select>
+
+            <label for="status-filter">Status:</label>
+            <select id="status-filter">
+                <option value="all">Todos</option>
+                <option value="scheduled">Agendados</option>
+                <option value="live">Ao Vivo</option>
+                <option value="final">Finalizados</option>
+            </select>
+
+            <label for="group-filter">Grupo:</label>
+            <select id="group-filter">
+                <option value="all">Todos</option>
+                <option value="A">Grupo A</option>
+                <option value="B">Grupo B</option>
+                <option value="C">Grupo C</option>
+                <option value="D">Grupo D</option>
+                <option value="E">Grupo E</option>
+                <option value="F">Grupo F</option>
+                <option value="G">Grupo G</option>
+                <option value="H">Grupo H</option>
+                <option value="I">Grupo I</option>
+                <option value="J">Grupo J</option>
+                <option value="K">Grupo K</option>
+                <option value="L">Grupo L</option>
+            </select>
+        </div>
+
+        <section class="matches-list" id="matches-list">
+            <!-- Preenchido via JS -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Dados: <a href="https://native-stats.org/competition/WC/" target="_blank" rel="noopener">native-stats.org</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/app.js"></script>
+    <script>
+        window.APP_DATA = {{ data | tojson }};
+        window.META = {{ meta | tojson }};
+        document.addEventListener('DOMContentLoaded', () => App.initMatches());
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+[
+  {
+    "rank": 1,
+    "player": "Lionel Messi",
+    "team_id": 762,
+    "goals": 5,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 34.0
+  },
+  {
+    "rank": 2,
+    "player": "Erling Haaland",
+    "team_id": 813,
+    "goals": 4,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 45.0
+  },
+  {
+    "rank": 3,
+    "player": "Vinicius Junior",
+    "team_id": 764,
+    "goals": 4,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 52.21
+  },
+  {
+    "rank": 4,
+    "player": "Kylian Mbappé",
+    "team_id": 773,
+    "goals": 4,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 67.5
+  },
+  {
+    "rank": 5,
+    "player": "Matheus Cunha",
+    "team_id": 764,
+    "goals": 3,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 56.34
+  },
+  {
+    "rank": 6,
+    "player": "Deniz Undav",
+    "team_id": 759,
+    "goals": 3,
+    "assists": 2,
+    "shots": null,
+    "minutes_per_goal": 11.2
+  },
+  {
+    "rank": 7,
+    "player": "Johan Manzambi",
+    "team_id": 788,
+    "goals": 3,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 32.25
+  },
+  {
+    "rank": 8,
+    "player": "Jonathan David",
+    "team_id": 0,
+    "goals": 3,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 80.34
+  },
+  {
+    "rank": 9,
+    "player": "Ismael Saibari",
+    "team_id": 0,
+    "goals": 3,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 80.67
+  },
+  {
+    "rank": 10,
+    "player": "Daichi Kamada",
+    "team_id": 766,
+    "goals": 2,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 127.0
+  },
+  {
+    "rank": 11,
+    "player": "Ismaïla Sarr",
+    "team_id": 0,
+    "goals": 2,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 127.5
+  },
+  {
+    "rank": 12,
+    "player": "Yasin Ayari",
+    "team_id": 792,
+    "goals": 2,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 129.5
+  },
+  {
+    "rank": 13,
+    "player": "Ayase Ueda",
+    "team_id": 766,
+    "goals": 2,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 86.0
+  },
+  {
+    "rank": 14,
+    "player": "Cyle Larin",
+    "team_id": 0,
+    "goals": 2,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 81.0
+  },
+  {
+    "rank": 15,
+    "player": "Julián Quiñones",
+    "team_id": 769,
+    "goals": 2,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 126.5
+  },
+  {
+    "rank": 16,
+    "player": "Cody Gakpo",
+    "team_id": 8601,
+    "goals": 2,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 88.34
+  },
+  {
+    "rank": 17,
+    "player": "Aymen Hussein",
+    "team_id": 0,
+    "goals": 2,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 58.0
+  },
+  {
+    "rank": 18,
+    "player": "Maximiliano Araújo",
+    "team_id": 758,
+    "goals": 2,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 84.34
+  },
+  {
+    "rank": 19,
+    "player": "Kai Havertz",
+    "team_id": 759,
+    "goals": 2,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 132.5
+  },
+  {
+    "rank": 20,
+    "player": "Cristiano Ronaldo",
+    "team_id": 765,
+    "goals": 2,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 90.0
+  }
+]

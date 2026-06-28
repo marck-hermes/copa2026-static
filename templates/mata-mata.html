@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata-Mata - Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="back-link">← Início</a>
+            <h1>Mata-Mata</h1>
+            <p class="subtitle">32 seleções • Oitavas → Quartas → Semis → Final</p>
+            <div class="last-update" id="last-update">Carregando...</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="bracket-controls">
+            <label for="round-filter">Filtrar fase:</label>
+            <select id="round-filter">
+                <option value="all">Todas</option>
+                <option value="32">Oitavas de Final</option>
+                <option value="16">Quartas de Final</option>
+                <option value="8">Semifinais</option>
+                <option value="4">Final</option>
+                <option value="3rd">Disputa 3º Lugar</option>
+            </select>
+        </div>
+
+        <section class="bracket-container" id="bracket-32">
+            <h2>Oitavas de Final</h2>
+            <div class="bracket-round" data-round="32">
+                <!-- 16 matches rendered here -->
+            </div>
+        </section>
+
+        <section class="bracket-container" id="bracket-16">
+            <h2>Quartas de Final</h2>
+            <div class="bracket-round" data-round="16">
+                <!-- 8 matches rendered here -->
+            </div>
+        </section>
+
+        <section class="bracket-container" id="bracket-8">
+            <h2>Semifinais</h2>
+            <div class="bracket-round" data-round="8">
+                <!-- 4 matches rendered here -->
+            </div>
+        </section>
+
+        <section class="bracket-container" id="bracket-4">
+            <h2>Final</h2>
+            <div class="bracket-round" data-round="4">
+                <!-- 1 match rendered here -->
+            </div>
+        </section>
+
+        <section class="bracket-container" id="bracket-3rd">
+            <h2>Disputa do 3º Lugar</h2>
+            <div class="bracket-round" data-round="3rd">
+                <!-- 1 match rendered here -->
+            </div>
+        </section>
+
+        <div class="bracket-legend">
+            <h3>Como funciona</h3>
+            <ul>
+                <li><strong>Oitavas (32):</strong> 16 jogos eliminatórios</li>
+                <li><strong>Quartas (16):</strong> 8 jogos eliminatórios</li>
+                <li><strong>Semis (8):</strong> 4 jogos eliminatórios</li>
+                <li><strong>Final (4):</strong> 1 jogo define o campeão</li>
+                <li><strong>3º Lugar:</strong> Perdedores das semifinais</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Dados: <a href="https://native-stats.org/competition/WC/" target="_blank" rel="noopener">native-stats.org</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/bracket.js"></script>
+    <script src="/assets/app.js"></script>
+    <script>
+        window.APP_DATA = {{ data | tojson }};
+        window.META = {{ meta | tojson }};
+        document.addEventListener('DOMContentLoaded', () => {
+            App.init();
+            BracketRenderer.init();
+        });
+    </script>
+</body>
+</html>

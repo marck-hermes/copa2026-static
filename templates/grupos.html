@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase de Grupos - Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="back-link">← Voltar</a>
+            <h1>Fase de Grupos</h1>
+            <p class="subtitle">12 grupos • 48 seleções • 2 avançam por grupo + 8 melhores 3ºs</p>
+            <div class="last-update" id="last-update">Carregando...</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="groups-overview" id="groups-overview">
+            <!-- Grupos A-L renderizados aqui -->
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Dados: <a href="https://native-stats.org/competition/WC/" target="_blank" rel="noopener">native-stats.org</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/app.js"></script>
+    <script>
+        window.APP_DATA = {{ data | tojson }};
+        window.META = {{ meta | tojson }};
+        document.addEventListener('DOMContentLoaded', () => App.initGroupsOverview());
+    </script>
+</body>
+</html>

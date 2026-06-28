@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo {{ group_letter }} - Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/grupos.html" class="back-link">← Grupos</a>
+            <h1>Grupo {{ group_letter }}</h1>
+            <p class="subtitle">Classificação e jogos</p>
+            <div class="last-update" id="last-update">Carregando...</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="group-standings">
+            <h2>Classificação</h2>
+            <div class="table-responsive">
+                <table class="standings-table" id="standings-table">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Seleção</th>
+                            <th>J</th>
+                            <th>V</th>
+                            <th>E</th>
+                            <th>D</th>
+                            <th>GP</th>
+                            <th>GC</th>
+                            <th>SG</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Preenchido via JS -->
+                    </tbody>
+                </table>
+            </div>
+            <p class="standings-legend">
+                <strong>Legenda:</strong> J = Jogos • V = Vitórias • E = Empates • D = Derrotas • GP = Gols Pró • GC = Gols Contra • SG = Saldo de Gols • Pts = Pontos
+            </p>
+        </section>
+
+        <section class="group-matches">
+            <h2>Jogos do Grupo</h2>
+            <div class="matches-list" id="group-matches">
+                <!-- Preenchido via JS -->
+            </div>
+        </section>
+
+        <section class="qualification-info">
+            <h3>Critérios de Classificação</h3>
+            <ol>
+                <li>Maior número de pontos</li>
+                <li>Maior saldo de gols</li>
+                <li>Maior número de gols pró</li>
+                <li>Confronto direto</li>
+                <li>Fair play (menos cartões)</li>
+                <li>Sorteio</li>
+            </ol>
+            <p class="qualification-note">
+                <strong>Classificam-se:</strong> 1º e 2º colocados + 8 melhores 3ºs colocados (entre os 12 grupos).
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Dados: <a href="https://native-stats.org/competition/WC/" target="_blank" rel="noopener">native-stats.org</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/app.js"></script>
+    <script>
+        window.APP_DATA = {{ data | tojson }};
+        window.META = {{ meta | tojson }};
+        window.GROUP_LETTER = "{{ group_letter }}";
+        document.addEventListener('DOMContentLoaded', () => App.initGroupDetail());
+    </script>
+</body>
+</html>

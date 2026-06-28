@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artilheiros - Copa do Mundo 2026</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="back-link">← Início</a>
+            <h1>Artilheiros</h1>
+            <p class="subtitle">Top goleadores da Copa do Mundo 2026</p>
+            <div class="last-update" id="last-update">Carregando...</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="scorers-table">
+            <div class="table-responsive">
+                <table class="scorers-table" id="scorers-table">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Jogador</th>
+                            <th>Seleção</th>
+                            <th>Gols</th>
+                            <th>Assist.</th>
+                            <th>Min/Gol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Preenchido via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="scorers-stats">
+            <h3>Estatísticas</h3>
+            <div class="stats-grid" id="scorers-stats">
+                <!-- Preenchido via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Dados: <a href="https://native-stats.org/competition/WC/" target="_blank" rel="noopener">native-stats.org</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/app.js"></script>
+    <script>
+        window.APP_DATA = {{ data | tojson }};
+        window.META = {{ meta | tojson }};
+        document.addEventListener('DOMContentLoaded', () => App.initScorers());
+    </script>
+</body>
+</html>

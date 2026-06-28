@@ -1,0 +1,322 @@
+[
+  {
+    "round": "32",
+    "match_num": 1,
+    "team_a_id": 773,
+    "team_b_id": 772,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W1",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 2,
+    "team_a_id": 769,
+    "team_b_id": 799,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W2",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 3,
+    "team_a_id": 8601,
+    "team_b_id": 1930,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W3",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 4,
+    "team_a_id": 764,
+    "team_b_id": 816,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W4",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 5,
+    "team_a_id": 760,
+    "team_b_id": 840,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W5",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 6,
+    "team_a_id": 788,
+    "team_b_id": 804,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W6",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 7,
+    "team_a_id": 815,
+    "team_b_id": 761,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W7",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 8,
+    "team_a_id": 759,
+    "team_b_id": 774,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W8",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 9,
+    "team_a_id": 762,
+    "team_b_id": 1060,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W9",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 10,
+    "team_a_id": 771,
+    "team_b_id": 791,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W10",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 11,
+    "team_a_id": 818,
+    "team_b_id": 779,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W11",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 12,
+    "team_a_id": 1935,
+    "team_b_id": 792,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W12",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 13,
+    "team_a_id": 8872,
+    "team_b_id": 763,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W13",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 14,
+    "team_a_id": 766,
+    "team_b_id": 770,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W14",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 15,
+    "team_a_id": 805,
+    "team_b_id": 765,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W15",
+    "status": "final"
+  },
+  {
+    "round": "32",
+    "match_num": 16,
+    "team_a_id": 825,
+    "team_b_id": 828,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W16",
+    "status": "final"
+  },
+  {
+    "round": "16",
+    "match_num": 1,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W17",
+    "status": "scheduled"
+  },
+  {
+    "round": "16",
+    "match_num": 2,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W18",
+    "status": "scheduled"
+  },
+  {
+    "round": "16",
+    "match_num": 3,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W19",
+    "status": "scheduled"
+  },
+  {
+    "round": "16",
+    "match_num": 4,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W20",
+    "status": "scheduled"
+  },
+  {
+    "round": "16",
+    "match_num": 5,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W21",
+    "status": "scheduled"
+  },
+  {
+    "round": "16",
+    "match_num": 6,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W22",
+    "status": "scheduled"
+  },
+  {
+    "round": "16",
+    "match_num": 7,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W23",
+    "status": "scheduled"
+  },
+  {
+    "round": "16",
+    "match_num": 8,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W24",
+    "status": "scheduled"
+  },
+  {
+    "round": "8",
+    "match_num": 1,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W25",
+    "status": "scheduled"
+  },
+  {
+    "round": "8",
+    "match_num": 2,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W26",
+    "status": "scheduled"
+  },
+  {
+    "round": "8",
+    "match_num": 3,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W27",
+    "status": "scheduled"
+  },
+  {
+    "round": "8",
+    "match_num": 4,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W28",
+    "status": "scheduled"
+  },
+  {
+    "round": "4",
+    "match_num": 1,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W29",
+    "status": "scheduled"
+  },
+  {
+    "round": "4",
+    "match_num": 2,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "W30",
+    "status": "scheduled"
+  },
+  {
+    "round": "final",
+    "match_num": 1,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "CHAMPION",
+    "status": "scheduled"
+  },
+  {
+    "round": "3rd",
+    "match_num": 1,
+    "team_a_id": null,
+    "team_b_id": null,
+    "score_a": null,
+    "score_b": null,
+    "winner_slot": "3RD_PLACE",
+    "status": "scheduled"
+  }
+]

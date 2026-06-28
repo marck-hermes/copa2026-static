@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo 2026 - Tabela Completa</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Copa do Mundo FIFA 2026</h1>
+            <p class="subtitle">Canadá • México • EUA</p>
+            <div class="last-update" id="last-update">
+                Carregando...
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="/grupos.html" class="nav-card">
+                <span class="nav-icon">🏆</span>
+                <span>Fase de Grupos</span>
+                <span class="nav-badge">12 grupos</span>
+            </a>
+            <a href="/mata-mata.html" class="nav-card">
+                <span class="nav-icon">⚽</span>
+                <span>Mata-Mata</span>
+                <span class="nav-badge">32 → Campeão</span>
+            </a>
+            <a href="/artilheiros.html" class="nav-card">
+                <span class="nav-icon">🥅</span>
+                <span>Artilheiros</span>
+                <span class="nav-badge">Top 20</span>
+            </a>
+            <a href="/jogos.html" class="nav-card">
+                <span class="nav-icon">📅</span>
+                <span>Todos os Jogos</span>
+                <span class="nav-badge">Completo</span>
+            </a>
+        </nav>
+
+        <section class="quick-stats">
+            <h2>Visão Rápida</h2>
+            <div class="stats-grid" id="quick-stats">
+                <!-- Preenchido via JS -->
+            </div>
+        </section>
+
+        <section class="recent-matches">
+            <h2>Últimos Resultados</h2>
+            <div class="matches-list" id="recent-matches">
+                <!-- Preenchido via JS -->
+            </div>
+        </section>
+
+        <section class="upcoming-matches">
+            <h2>Próximos Jogos</h2>
+            <div class="matches-list" id="upcoming-matches">
+                <!-- Preenchido via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Dados: <a href="https://native-stats.org/competition/WC/" target="_blank" rel="noopener">native-stats.org</a></p>
+            <p>Atualização automática a cada 2 horas via GitHub Actions</p>
+        </div>
+    </footer>
+
+    <script src="/assets/app.js"></script>
+    <script>
+        // Inicializa com dados embutidos
+        window.APP_DATA = {{ data | tojson }};
+        window.META = {{ meta | tojson }};
+        document.addEventListener('DOMContentLoaded', () => App.init());
+    </script>
+</body>
+</html>
