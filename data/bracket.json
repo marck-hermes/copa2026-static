@@ -2,7 +2,7 @@
   {
     "round": "32",
     "match_num": 1,
-    "team_a_id": 773,
+    "team_a_id": 764,
     "team_b_id": 840,
     "score_a": null,
     "score_b": null,
@@ -12,7 +12,7 @@
   {
     "round": "32",
     "match_num": 2,
-    "team_a_id": 762,
+    "team_a_id": 773,
     "team_b_id": 804,
     "score_a": null,
     "score_b": null,
@@ -22,7 +22,7 @@
   {
     "round": "32",
     "match_num": 3,
-    "team_a_id": 769,
+    "team_a_id": 762,
     "team_b_id": 761,
     "score_a": null,
     "score_b": null,
@@ -32,7 +32,7 @@
   {
     "round": "32",
     "match_num": 4,
-    "team_a_id": 8601,
+    "team_a_id": 769,
     "team_b_id": 774,
     "score_a": null,
     "score_b": null,
@@ -42,7 +42,7 @@
   {
     "round": "32",
     "match_num": 5,
-    "team_a_id": 828,
+    "team_a_id": 8601,
     "team_b_id": 778,
     "score_a": null,
     "score_b": null,
@@ -52,7 +52,7 @@
   {
     "round": "32",
     "match_num": 6,
-    "team_a_id": 764,
+    "team_a_id": 828,
     "team_b_id": 1060,
     "score_a": null,
     "score_b": null,
@@ -133,7 +133,7 @@
     "round": "32",
     "match_num": 14,
     "team_a_id": 1935,
-    "team_b_id": 805,
+    "team_b_id": 766,
     "score_a": null,
     "score_b": null,
     "winner_slot": "W14",
@@ -143,7 +143,7 @@
     "round": "32",
     "match_num": 15,
     "team_a_id": 8872,
-    "team_b_id": 766,
+    "team_b_id": 805,
     "score_a": null,
     "score_b": null,
     "winner_slot": "W15",

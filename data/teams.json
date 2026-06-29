@@ -1,5 +1,13 @@
 [
   {
+    "id": 764,
+    "name": "Brazil",
+    "fifa_code": "BRA",
+    "flag_url": "https://crests.football-data.org/764.svg",
+    "group": null,
+    "flag_emoji": "🇧🇷"
+  },
+  {
     "id": 773,
     "name": "France",
     "fifa_code": "FRA",
@@ -38,14 +46,6 @@
     "flag_url": "https://crests.football-data.org/canada.svg",
     "group": null,
     "flag_emoji": "🇨🇦"
-  },
-  {
-    "id": 764,
-    "name": "Brazil",
-    "fifa_code": "BRA",
-    "flag_url": "https://crests.football-data.org/764.svg",
-    "group": null,
-    "flag_emoji": "🇧🇷"
   },
   {
     "id": 760,
@@ -136,20 +136,20 @@
     "flag_emoji": "🇵🇹"
   },
   {
-    "id": 766,
-    "name": "Japan",
-    "fifa_code": "JPN",
-    "flag_url": "https://crests.football-data.org/766.svg",
-    "group": null,
-    "flag_emoji": "🇯🇵"
-  },
-  {
     "id": 805,
     "name": "Belgium",
     "fifa_code": "BEL",
     "flag_url": "https://crests.football-data.org/805.svg",
     "group": null,
     "flag_emoji": "🇧🇪"
+  },
+  {
+    "id": 766,
+    "name": "Japan",
+    "fifa_code": "JPN",
+    "flag_url": "https://crests.football-data.org/766.svg",
+    "group": null,
+    "flag_emoji": "🇯🇵"
   },
   {
     "id": 825,
