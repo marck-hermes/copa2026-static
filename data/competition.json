@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T10:42:08.569453Z",
+  "fetched_at": "2026-06-30T18:23:45.306917Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -389,6 +389,18 @@
   ],
   "matches": [
     {
+      "id": 537424,
+      "date_utc": "2026-06-30T19:00:00Z",
+      "team_a_id": 1935,
+      "team_b_id": 8872,
+      "score_a": 0,
+      "score_b": 1,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "3.74 / 3.51 / 1.99"
+    },
+    {
       "id": 537418,
       "date_utc": "2026-06-30T03:00:00Z",
       "team_a_id": 8601,
@@ -495,18 +507,6 @@
       "group": null,
       "status": "final",
       "odds": "1.85 / 3.3 / 4.22"
-    },
-    {
-      "id": 537413,
-      "date_utc": "2026-06-27T23:00:00Z",
-      "team_a_id": 1836,
-      "team_b_id": 770,
-      "score_a": 0,
-      "score_b": 2,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "18.5 / 6.63 / 1.14"
     }
   ],
   "standings": [
