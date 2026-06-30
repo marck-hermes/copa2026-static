@@ -1,11 +1,23 @@
 [
   {
+    "id": 537416,
+    "date_utc": "2026-06-30T23:00:00Z",
+    "team_a_id": 773,
+    "team_b_id": 792,
+    "score_a": 3,
+    "score_b": 0,
+    "stage": "group",
+    "group": null,
+    "status": "final",
+    "odds": "1.33 / 5.34 / 9.43"
+  },
+  {
     "id": 537424,
     "date_utc": "2026-06-30T19:00:00Z",
     "team_a_id": 1935,
     "team_b_id": 8872,
-    "score_a": 0,
-    "score_b": 1,
+    "score_a": 1,
+    "score_b": 2,
     "stage": "group",
     "group": null,
     "status": "final",
@@ -106,17 +118,5 @@
     "group": null,
     "status": "final",
     "odds": "3.13 / 3.17 / 2.07"
-  },
-  {
-    "id": 537414,
-    "date_utc": "2026-06-27T23:00:00Z",
-    "team_a_id": 799,
-    "team_b_id": 763,
-    "score_a": 2,
-    "score_b": 1,
-    "stage": "group",
-    "group": null,
-    "status": "final",
-    "odds": "1.85 / 3.3 / 4.22"
   }
 ]

@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-06-30T18:23:45.306917Z",
+  "fetched_at": "2026-06-30T23:53:15.563760Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
+    {
+      "id": 773,
+      "name": "France",
+      "fifa_code": "FRA",
+      "flag_url": "https://crests.football-data.org/773.svg",
+      "group": null,
+      "flag_emoji": "🇫🇷"
+    },
     {
       "id": 764,
       "name": "Brazil",
@@ -19,14 +27,6 @@
       "flag_emoji": "🇲🇦"
     },
     {
-      "id": 773,
-      "name": "France",
-      "fifa_code": "FRA",
-      "flag_url": "https://crests.football-data.org/773.svg",
-      "group": null,
-      "flag_emoji": "🇫🇷"
-    },
-    {
       "id": 762,
       "name": "Argentina",
       "fifa_code": "ARG",
@@ -41,6 +41,14 @@
       "flag_url": "https://crests.football-data.org/769.svg",
       "group": null,
       "flag_emoji": "🇲🇽"
+    },
+    {
+      "id": 8872,
+      "name": "Norway",
+      "fifa_code": "NOR",
+      "flag_url": "https://crests.football-data.org/813.svg",
+      "group": null,
+      "flag_emoji": "🇳🇴"
     },
     {
       "id": 828,
@@ -123,14 +131,6 @@
       "flag_emoji": "🇨🇮"
     },
     {
-      "id": 8872,
-      "name": "Norway",
-      "fifa_code": "NOR",
-      "flag_url": "https://crests.football-data.org/813.svg",
-      "group": null,
-      "flag_emoji": "🇳🇴"
-    },
-    {
       "id": 799,
       "name": "Croatia",
       "fifa_code": "CRO",
@@ -177,14 +177,6 @@
       "flag_url": "https://crests.football-data.org/congo_dr.svg",
       "group": null,
       "flag_emoji": "🇨🇩"
-    },
-    {
-      "id": 792,
-      "name": "Sweden",
-      "fifa_code": "SWE",
-      "flag_url": "https://crests.football-data.org/792.svg",
-      "group": null,
-      "flag_emoji": "🇸🇪"
     },
     {
       "id": 816,
@@ -241,6 +233,14 @@
       "flag_url": "https://crests.football-data.org/9396.svg",
       "group": null,
       "flag_emoji": "🇷🇸"
+    },
+    {
+      "id": 792,
+      "name": "Sweden",
+      "fifa_code": "SWE",
+      "flag_url": "https://crests.football-data.org/792.svg",
+      "group": null,
+      "flag_emoji": "🇸🇪"
     },
     {
       "id": 804,
@@ -389,12 +389,24 @@
   ],
   "matches": [
     {
+      "id": 537416,
+      "date_utc": "2026-06-30T23:00:00Z",
+      "team_a_id": 773,
+      "team_b_id": 792,
+      "score_a": 3,
+      "score_b": 0,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "1.33 / 5.34 / 9.43"
+    },
+    {
       "id": 537424,
       "date_utc": "2026-06-30T19:00:00Z",
       "team_a_id": 1935,
       "team_b_id": 8872,
-      "score_a": 0,
-      "score_b": 1,
+      "score_a": 1,
+      "score_b": 2,
       "stage": "group",
       "group": null,
       "status": "final",
@@ -495,24 +507,25 @@
       "group": null,
       "status": "final",
       "odds": "3.13 / 3.17 / 2.07"
-    },
-    {
-      "id": 537414,
-      "date_utc": "2026-06-27T23:00:00Z",
-      "team_a_id": 799,
-      "team_b_id": 763,
-      "score_a": 2,
-      "score_b": 1,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "1.85 / 3.3 / 4.22"
     }
   ],
   "standings": [
     {
-      "team_id": 764,
+      "team_id": 773,
       "pos": 1,
+      "mp": 4,
+      "w": 4,
+      "d": 0,
+      "l": 0,
+      "gf": 13,
+      "ga": 2,
+      "gd": 11,
+      "pts": 12,
+      "form": ""
+    },
+    {
+      "team_id": 764,
+      "pos": 2,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -525,7 +538,7 @@
     },
     {
       "team_id": 815,
-      "pos": 2,
+      "pos": 3,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -534,19 +547,6 @@
       "ga": 6,
       "gd": 4,
       "pts": 10,
-      "form": ""
-    },
-    {
-      "team_id": 773,
-      "pos": 3,
-      "mp": 3,
-      "w": 3,
-      "d": 0,
-      "l": 0,
-      "gf": 10,
-      "ga": 2,
-      "gd": 8,
-      "pts": 9,
       "form": ""
     },
     {
@@ -576,8 +576,21 @@
       "form": ""
     },
     {
-      "team_id": 828,
+      "team_id": 8872,
       "pos": 6,
+      "mp": 4,
+      "w": 3,
+      "d": 0,
+      "l": 1,
+      "gf": 10,
+      "ga": 8,
+      "gd": 2,
+      "pts": 9,
+      "form": ""
+    },
+    {
+      "team_id": 828,
+      "pos": 7,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -590,7 +603,7 @@
     },
     {
       "team_id": 8601,
-      "pos": 7,
+      "pos": 8,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -603,7 +616,7 @@
     },
     {
       "team_id": 760,
-      "pos": 8,
+      "pos": 9,
       "mp": 3,
       "w": 2,
       "d": 1,
@@ -616,7 +629,7 @@
     },
     {
       "team_id": 788,
-      "pos": 9,
+      "pos": 10,
       "mp": 3,
       "w": 2,
       "d": 1,
@@ -629,7 +642,7 @@
     },
     {
       "team_id": 770,
-      "pos": 10,
+      "pos": 11,
       "mp": 3,
       "w": 2,
       "d": 1,
@@ -642,7 +655,7 @@
     },
     {
       "team_id": 818,
-      "pos": 11,
+      "pos": 12,
       "mp": 3,
       "w": 2,
       "d": 1,
@@ -655,7 +668,7 @@
     },
     {
       "team_id": 761,
-      "pos": 12,
+      "pos": 13,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -668,7 +681,7 @@
     },
     {
       "team_id": 759,
-      "pos": 13,
+      "pos": 14,
       "mp": 4,
       "w": 2,
       "d": 0,
@@ -681,7 +694,7 @@
     },
     {
       "team_id": 771,
-      "pos": 14,
+      "pos": 15,
       "mp": 3,
       "w": 2,
       "d": 0,
@@ -694,26 +707,13 @@
     },
     {
       "team_id": 1935,
-      "pos": 15,
-      "mp": 3,
-      "w": 2,
-      "d": 0,
-      "l": 1,
-      "gf": 4,
-      "ga": 2,
-      "gd": 2,
-      "pts": 6,
-      "form": ""
-    },
-    {
-      "team_id": 8872,
       "pos": 16,
-      "mp": 3,
+      "mp": 4,
       "w": 2,
       "d": 0,
-      "l": 1,
-      "gf": 8,
-      "ga": 7,
+      "l": 2,
+      "gf": 5,
+      "ga": 4,
       "gd": 1,
       "pts": 6,
       "form": ""
@@ -797,21 +797,8 @@
       "form": ""
     },
     {
-      "team_id": 792,
-      "pos": 23,
-      "mp": 3,
-      "w": 1,
-      "d": 1,
-      "l": 1,
-      "gf": 7,
-      "ga": 7,
-      "gd": 0,
-      "pts": 4,
-      "form": ""
-    },
-    {
       "team_id": 816,
-      "pos": 24,
+      "pos": 23,
       "mp": 3,
       "w": 1,
       "d": 1,
@@ -824,7 +811,7 @@
     },
     {
       "team_id": 763,
-      "pos": 25,
+      "pos": 24,
       "mp": 3,
       "w": 1,
       "d": 1,
@@ -837,7 +824,7 @@
     },
     {
       "team_id": 779,
-      "pos": 26,
+      "pos": 25,
       "mp": 3,
       "w": 1,
       "d": 1,
@@ -850,7 +837,7 @@
     },
     {
       "team_id": 791,
-      "pos": 27,
+      "pos": 26,
       "mp": 3,
       "w": 1,
       "d": 1,
@@ -863,7 +850,7 @@
     },
     {
       "team_id": 1060,
-      "pos": 28,
+      "pos": 27,
       "mp": 3,
       "w": 1,
       "d": 1,
@@ -876,7 +863,7 @@
     },
     {
       "team_id": 778,
-      "pos": 29,
+      "pos": 28,
       "mp": 3,
       "w": 1,
       "d": 1,
@@ -889,7 +876,7 @@
     },
     {
       "team_id": 774,
-      "pos": 30,
+      "pos": 29,
       "mp": 4,
       "w": 1,
       "d": 1,
@@ -897,6 +884,19 @@
       "gf": 2,
       "ga": 4,
       "gd": -2,
+      "pts": 4,
+      "form": ""
+    },
+    {
+      "team_id": 792,
+      "pos": 30,
+      "mp": 4,
+      "w": 1,
+      "d": 1,
+      "l": 2,
+      "gf": 7,
+      "ga": 10,
+      "gd": -3,
       "pts": 4,
       "form": ""
     },
@@ -1152,7 +1152,7 @@
       "goals": 4,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 45.0
+      "minutes_per_goal": 67.5
     },
     {
       "rank": 3,

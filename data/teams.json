@@ -1,5 +1,13 @@
 [
   {
+    "id": 773,
+    "name": "France",
+    "fifa_code": "FRA",
+    "flag_url": "https://crests.football-data.org/773.svg",
+    "group": null,
+    "flag_emoji": "🇫🇷"
+  },
+  {
     "id": 764,
     "name": "Brazil",
     "fifa_code": "BRA",
@@ -16,14 +24,6 @@
     "flag_emoji": "🇲🇦"
   },
   {
-    "id": 773,
-    "name": "France",
-    "fifa_code": "FRA",
-    "flag_url": "https://crests.football-data.org/773.svg",
-    "group": null,
-    "flag_emoji": "🇫🇷"
-  },
-  {
     "id": 762,
     "name": "Argentina",
     "fifa_code": "ARG",
@@ -38,6 +38,14 @@
     "flag_url": "https://crests.football-data.org/769.svg",
     "group": null,
     "flag_emoji": "🇲🇽"
+  },
+  {
+    "id": 8872,
+    "name": "Norway",
+    "fifa_code": "NOR",
+    "flag_url": "https://crests.football-data.org/813.svg",
+    "group": null,
+    "flag_emoji": "🇳🇴"
   },
   {
     "id": 828,
@@ -120,14 +128,6 @@
     "flag_emoji": "🇨🇮"
   },
   {
-    "id": 8872,
-    "name": "Norway",
-    "fifa_code": "NOR",
-    "flag_url": "https://crests.football-data.org/813.svg",
-    "group": null,
-    "flag_emoji": "🇳🇴"
-  },
-  {
     "id": 799,
     "name": "Croatia",
     "fifa_code": "CRO",
@@ -174,14 +174,6 @@
     "flag_url": "https://crests.football-data.org/congo_dr.svg",
     "group": null,
     "flag_emoji": "🇨🇩"
-  },
-  {
-    "id": 792,
-    "name": "Sweden",
-    "fifa_code": "SWE",
-    "flag_url": "https://crests.football-data.org/792.svg",
-    "group": null,
-    "flag_emoji": "🇸🇪"
   },
   {
     "id": 816,
@@ -238,6 +230,14 @@
     "flag_url": "https://crests.football-data.org/9396.svg",
     "group": null,
     "flag_emoji": "🇷🇸"
+  },
+  {
+    "id": 792,
+    "name": "Sweden",
+    "fifa_code": "SWE",
+    "flag_url": "https://crests.football-data.org/792.svg",
+    "group": null,
+    "flag_emoji": "🇸🇪"
   },
   {
     "id": 804,
