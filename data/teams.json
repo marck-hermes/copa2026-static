@@ -8,6 +8,14 @@
     "flag_emoji": "🇫🇷"
   },
   {
+    "id": 769,
+    "name": "Mexico",
+    "fifa_code": "MEX",
+    "flag_url": "https://crests.football-data.org/769.svg",
+    "group": null,
+    "flag_emoji": "🇲🇽"
+  },
+  {
     "id": 764,
     "name": "Brazil",
     "fifa_code": "BRA",
@@ -30,14 +38,6 @@
     "flag_url": "https://crests.football-data.org/762.png",
     "group": null,
     "flag_emoji": "🇦🇷"
-  },
-  {
-    "id": 769,
-    "name": "Mexico",
-    "fifa_code": "MEX",
-    "flag_url": "https://crests.football-data.org/769.svg",
-    "group": null,
-    "flag_emoji": "🇲🇽"
   },
   {
     "id": 8872,
@@ -200,14 +200,6 @@
     "flag_emoji": "🇦🇺"
   },
   {
-    "id": 791,
-    "name": "Ecuador",
-    "fifa_code": "ECU",
-    "flag_url": "https://crests.football-data.org/791.svg",
-    "group": null,
-    "flag_emoji": "🇪🇨"
-  },
-  {
     "id": 1060,
     "name": "Bosnia-H.",
     "fifa_code": "BIH",
@@ -222,6 +214,14 @@
     "flag_url": "https://crests.football-data.org/algeria.svg",
     "group": null,
     "flag_emoji": "🇦🇱"
+  },
+  {
+    "id": 791,
+    "name": "Ecuador",
+    "fifa_code": "ECU",
+    "flag_url": "https://crests.football-data.org/791.svg",
+    "group": null,
+    "flag_emoji": "🇪🇨"
   },
   {
     "id": 774,

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T23:53:15.563760Z",
+  "fetched_at": "2026-07-01T11:41:00.598470Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -9,6 +9,14 @@
       "flag_url": "https://crests.football-data.org/773.svg",
       "group": null,
       "flag_emoji": "🇫🇷"
+    },
+    {
+      "id": 769,
+      "name": "Mexico",
+      "fifa_code": "MEX",
+      "flag_url": "https://crests.football-data.org/769.svg",
+      "group": null,
+      "flag_emoji": "🇲🇽"
     },
     {
       "id": 764,
@@ -33,14 +41,6 @@
       "flag_url": "https://crests.football-data.org/762.png",
       "group": null,
       "flag_emoji": "🇦🇷"
-    },
-    {
-      "id": 769,
-      "name": "Mexico",
-      "fifa_code": "MEX",
-      "flag_url": "https://crests.football-data.org/769.svg",
-      "group": null,
-      "flag_emoji": "🇲🇽"
     },
     {
       "id": 8872,
@@ -203,14 +203,6 @@
       "flag_emoji": "🇦🇺"
     },
     {
-      "id": 791,
-      "name": "Ecuador",
-      "fifa_code": "ECU",
-      "flag_url": "https://crests.football-data.org/791.svg",
-      "group": null,
-      "flag_emoji": "🇪🇨"
-    },
-    {
       "id": 1060,
       "name": "Bosnia-H.",
       "fifa_code": "BIH",
@@ -225,6 +217,14 @@
       "flag_url": "https://crests.football-data.org/algeria.svg",
       "group": null,
       "flag_emoji": "🇦🇱"
+    },
+    {
+      "id": 791,
+      "name": "Ecuador",
+      "fifa_code": "ECU",
+      "flag_url": "https://crests.football-data.org/791.svg",
+      "group": null,
+      "flag_emoji": "🇪🇨"
     },
     {
       "id": 774,
@@ -389,6 +389,18 @@
   ],
   "matches": [
     {
+      "id": 537425,
+      "date_utc": "2026-07-01T03:00:00Z",
+      "team_a_id": 769,
+      "team_b_id": 791,
+      "score_a": 2,
+      "score_b": 0,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "2.16 / 3.06 / 3.82"
+    },
+    {
       "id": 537416,
       "date_utc": "2026-06-30T23:00:00Z",
       "team_a_id": 773,
@@ -495,18 +507,6 @@
       "group": null,
       "status": "final",
       "odds": "2.08 / 3.15 / 3.53"
-    },
-    {
-      "id": 537407,
-      "date_utc": "2026-06-28T01:30:00Z",
-      "team_a_id": 818,
-      "team_b_id": 765,
-      "score_a": 0,
-      "score_b": 0,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "3.13 / 3.17 / 2.07"
     }
   ],
   "standings": [
@@ -524,8 +524,21 @@
       "form": ""
     },
     {
-      "team_id": 764,
+      "team_id": 769,
       "pos": 2,
+      "mp": 4,
+      "w": 4,
+      "d": 0,
+      "l": 0,
+      "gf": 8,
+      "ga": 0,
+      "gd": 8,
+      "pts": 12,
+      "form": ""
+    },
+    {
+      "team_id": 764,
+      "pos": 3,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -538,7 +551,7 @@
     },
     {
       "team_id": 815,
-      "pos": 3,
+      "pos": 4,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -551,7 +564,7 @@
     },
     {
       "team_id": 762,
-      "pos": 4,
+      "pos": 5,
       "mp": 3,
       "w": 3,
       "d": 0,
@@ -559,19 +572,6 @@
       "gf": 8,
       "ga": 1,
       "gd": 7,
-      "pts": 9,
-      "form": ""
-    },
-    {
-      "team_id": 769,
-      "pos": 5,
-      "mp": 3,
-      "w": 3,
-      "d": 0,
-      "l": 0,
-      "gf": 6,
-      "ga": 0,
-      "gd": 6,
       "pts": 9,
       "form": ""
     },
@@ -836,21 +836,8 @@
       "form": ""
     },
     {
-      "team_id": 791,
-      "pos": 26,
-      "mp": 3,
-      "w": 1,
-      "d": 1,
-      "l": 1,
-      "gf": 2,
-      "ga": 2,
-      "gd": 0,
-      "pts": 4,
-      "form": ""
-    },
-    {
       "team_id": 1060,
-      "pos": 27,
+      "pos": 26,
       "mp": 3,
       "w": 1,
       "d": 1,
@@ -863,13 +850,26 @@
     },
     {
       "team_id": 778,
-      "pos": 28,
+      "pos": 27,
       "mp": 3,
       "w": 1,
       "d": 1,
       "l": 1,
       "gf": 5,
       "ga": 7,
+      "gd": -2,
+      "pts": 4,
+      "form": ""
+    },
+    {
+      "team_id": 791,
+      "pos": 28,
+      "mp": 4,
+      "w": 1,
+      "d": 1,
+      "l": 2,
+      "gf": 2,
+      "ga": 4,
       "gd": -2,
       "pts": 4,
       "form": ""
@@ -1170,7 +1170,7 @@
       "goals": 4,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 67.5
+      "minutes_per_goal": 90.0
     },
     {
       "rank": 5,
@@ -1242,7 +1242,7 @@
       "goals": 2,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 129.5
+      "minutes_per_goal": 174.5
     },
     {
       "rank": 13,
@@ -1269,7 +1269,7 @@
       "goals": 2,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 126.5
+      "minutes_per_goal": 171.5
     },
     {
       "rank": 16,
