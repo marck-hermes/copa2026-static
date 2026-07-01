@@ -24,6 +24,14 @@
     "flag_emoji": "🇧🇷"
   },
   {
+    "id": 770,
+    "name": "England",
+    "fifa_code": "ENG",
+    "flag_url": "https://crests.football-data.org/770.svg",
+    "group": null,
+    "flag_emoji": "🇬🇧"
+  },
+  {
     "id": 815,
     "name": "Morocco",
     "fifa_code": "MAR",
@@ -46,6 +54,14 @@
     "flag_url": "https://crests.football-data.org/813.svg",
     "group": null,
     "flag_emoji": "🇳🇴"
+  },
+  {
+    "id": 805,
+    "name": "Belgium",
+    "fifa_code": "BEL",
+    "flag_url": "https://crests.football-data.org/805.svg",
+    "group": null,
+    "flag_emoji": "🇧🇪"
   },
   {
     "id": 828,
@@ -78,14 +94,6 @@
     "flag_url": "https://crests.football-data.org/788.svg",
     "group": null,
     "flag_emoji": "🇨🇭"
-  },
-  {
-    "id": 770,
-    "name": "England",
-    "fifa_code": "ENG",
-    "flag_url": "https://crests.football-data.org/770.svg",
-    "group": null,
-    "flag_emoji": "🇬🇧"
   },
   {
     "id": 818,
@@ -144,14 +152,6 @@
     "flag_emoji": "🇵🇹"
   },
   {
-    "id": 805,
-    "name": "Belgium",
-    "fifa_code": "BEL",
-    "flag_url": "https://crests.football-data.org/805.svg",
-    "group": null,
-    "flag_emoji": "🇧🇪"
-  },
-  {
     "id": 766,
     "name": "Japan",
     "fifa_code": "JPN",
@@ -168,20 +168,20 @@
     "flag_emoji": "🇪🇬"
   },
   {
-    "id": 1934,
-    "name": "Congo DR",
-    "fifa_code": "COD",
-    "flag_url": "https://crests.football-data.org/congo_dr.svg",
-    "group": null,
-    "flag_emoji": "🇨🇩"
-  },
-  {
     "id": 816,
     "name": "Austria",
     "fifa_code": "AUT",
     "flag_url": "https://crests.football-data.org/816.svg",
     "group": null,
     "flag_emoji": "🇦🇹"
+  },
+  {
+    "id": 1934,
+    "name": "Congo DR",
+    "fifa_code": "COD",
+    "flag_url": "https://crests.football-data.org/congo_dr.svg",
+    "group": null,
+    "flag_emoji": "🇨🇩"
   },
   {
     "id": 763,
