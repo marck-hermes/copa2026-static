@@ -48,6 +48,14 @@
     "flag_emoji": "🇦🇷"
   },
   {
+    "id": 771,
+    "name": "USA",
+    "fifa_code": "USA",
+    "flag_url": "https://crests.football-data.org/usa.svg",
+    "group": null,
+    "flag_emoji": "🇺🇸"
+  },
+  {
     "id": 8872,
     "name": "Norway",
     "fifa_code": "NOR",
@@ -118,14 +126,6 @@
     "flag_url": "https://crests.football-data.org/759.svg",
     "group": null,
     "flag_emoji": "🇩🇪"
-  },
-  {
-    "id": 771,
-    "name": "USA",
-    "fifa_code": "USA",
-    "flag_url": "https://crests.football-data.org/usa.svg",
-    "group": null,
-    "flag_emoji": "🇺🇸"
   },
   {
     "id": 1935,
@@ -200,14 +200,6 @@
     "flag_emoji": "🇦🇺"
   },
   {
-    "id": 1060,
-    "name": "Bosnia-H.",
-    "fifa_code": "BIH",
-    "flag_url": "https://crests.football-data.org/bosnia.svg",
-    "group": null,
-    "flag_emoji": "🇧🇦"
-  },
-  {
     "id": 778,
     "name": "Algeria",
     "fifa_code": "ALG",
@@ -238,6 +230,14 @@
     "flag_url": "https://crests.football-data.org/792.svg",
     "group": null,
     "flag_emoji": "🇸🇪"
+  },
+  {
+    "id": 1060,
+    "name": "Bosnia-H.",
+    "fifa_code": "BIH",
+    "flag_url": "https://crests.football-data.org/bosnia.svg",
+    "group": null,
+    "flag_emoji": "🇧🇦"
   },
   {
     "id": 804,

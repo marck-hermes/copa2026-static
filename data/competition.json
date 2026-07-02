@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-01T23:59:01.468866Z",
+  "fetched_at": "2026-07-02T10:19:55.630795Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -49,6 +49,14 @@
       "flag_url": "https://crests.football-data.org/762.png",
       "group": null,
       "flag_emoji": "🇦🇷"
+    },
+    {
+      "id": 771,
+      "name": "USA",
+      "fifa_code": "USA",
+      "flag_url": "https://crests.football-data.org/usa.svg",
+      "group": null,
+      "flag_emoji": "🇺🇸"
     },
     {
       "id": 8872,
@@ -123,14 +131,6 @@
       "flag_emoji": "🇩🇪"
     },
     {
-      "id": 771,
-      "name": "USA",
-      "fifa_code": "USA",
-      "flag_url": "https://crests.football-data.org/usa.svg",
-      "group": null,
-      "flag_emoji": "🇺🇸"
-    },
-    {
       "id": 1935,
       "name": "Ivory Coast",
       "fifa_code": "CIV",
@@ -203,14 +203,6 @@
       "flag_emoji": "🇦🇺"
     },
     {
-      "id": 1060,
-      "name": "Bosnia-H.",
-      "fifa_code": "BIH",
-      "flag_url": "https://crests.football-data.org/bosnia.svg",
-      "group": null,
-      "flag_emoji": "🇧🇦"
-    },
-    {
       "id": 778,
       "name": "Algeria",
       "fifa_code": "ALG",
@@ -241,6 +233,14 @@
       "flag_url": "https://crests.football-data.org/792.svg",
       "group": null,
       "flag_emoji": "🇸🇪"
+    },
+    {
+      "id": 1060,
+      "name": "Bosnia-H.",
+      "fifa_code": "BIH",
+      "flag_url": "https://crests.football-data.org/bosnia.svg",
+      "group": null,
+      "flag_emoji": "🇧🇦"
     },
     {
       "id": 804,
@@ -389,6 +389,18 @@
   ],
   "matches": [
     {
+      "id": 537421,
+      "date_utc": "2026-07-02T02:00:00Z",
+      "team_a_id": 771,
+      "team_b_id": 1060,
+      "score_a": 2,
+      "score_b": 0,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "1.49 / 4.27 / 6.68"
+    },
+    {
       "id": 537422,
       "date_utc": "2026-07-01T22:00:00Z",
       "team_a_id": 805,
@@ -414,7 +426,7 @@
     },
     {
       "id": 537425,
-      "date_utc": "2026-07-01T03:00:00Z",
+      "date_utc": "2026-07-01T04:00:00Z",
       "team_a_id": 769,
       "team_b_id": 791,
       "score_a": 2,
@@ -497,28 +509,124 @@
       "odds": "5.34 / 3.63 / 1.71"
     },
     {
-      "id": 537401,
-      "date_utc": "2026-06-28T04:00:00Z",
-      "team_a_id": 8049,
-      "team_b_id": 762,
-      "score_a": 1,
-      "score_b": 3,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "19.5 / 6.5 / 1.14"
-    },
-    {
-      "id": 537421,
-      "date_utc": "2026-07-02T02:00:00Z",
-      "team_a_id": 771,
-      "team_b_id": 1060,
+      "id": 537420,
+      "date_utc": "2026-07-02T21:00:00Z",
+      "team_a_id": 760,
+      "team_b_id": 816,
       "score_a": null,
       "score_b": null,
       "stage": "group",
       "group": null,
       "status": "scheduled",
-      "odds": "1.49 / 4.27 / 6.68"
+      "odds": "1.32 / 5.0 / 10.65"
+    },
+    {
+      "id": 537419,
+      "date_utc": "2026-07-03T01:00:00Z",
+      "team_a_id": 765,
+      "team_b_id": 799,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "1.91 / 3.33 / 4.33"
+    },
+    {
+      "id": 537429,
+      "date_utc": "2026-07-03T05:00:00Z",
+      "team_a_id": 788,
+      "team_b_id": 778,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "1.63 / 3.9 / 5.45"
+    },
+    {
+      "id": 537428,
+      "date_utc": "2026-07-03T20:00:00Z",
+      "team_a_id": 779,
+      "team_b_id": 825,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "3.36 / 2.96 / 2.39"
+    },
+    {
+      "id": 537427,
+      "date_utc": "2026-07-04T00:00:00Z",
+      "team_a_id": 762,
+      "team_b_id": 1930,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "1.17 / 7.38 / 17.18"
+    },
+    {
+      "id": 537430,
+      "date_utc": "2026-07-04T03:30:00Z",
+      "team_a_id": 818,
+      "team_b_id": 763,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "1.77 / 3.37 / 5.12"
+    },
+    {
+      "id": 537376,
+      "date_utc": "2026-07-04T19:00:00Z",
+      "team_a_id": 828,
+      "team_b_id": 815,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "/  /"
+    },
+    {
+      "id": 537375,
+      "date_utc": "2026-07-04T23:00:00Z",
+      "team_a_id": 761,
+      "team_b_id": 773,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "/  /"
+    },
+    {
+      "id": 537377,
+      "date_utc": "2026-07-05T22:00:00Z",
+      "team_a_id": 764,
+      "team_b_id": 8872,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "/  /"
+    },
+    {
+      "id": 537378,
+      "date_utc": "2026-07-06T02:00:00Z",
+      "team_a_id": 769,
+      "team_b_id": 770,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "/  /"
     }
   ],
   "standings": [
@@ -601,8 +709,21 @@
       "form": ""
     },
     {
-      "team_id": 8872,
+      "team_id": 771,
       "pos": 7,
+      "mp": 4,
+      "w": 3,
+      "d": 0,
+      "l": 1,
+      "gf": 10,
+      "ga": 4,
+      "gd": 6,
+      "pts": 9,
+      "form": ""
+    },
+    {
+      "team_id": 8872,
+      "pos": 8,
       "mp": 4,
       "w": 3,
       "d": 0,
@@ -615,7 +736,7 @@
     },
     {
       "team_id": 805,
-      "pos": 8,
+      "pos": 9,
       "mp": 4,
       "w": 2,
       "d": 2,
@@ -628,7 +749,7 @@
     },
     {
       "team_id": 828,
-      "pos": 9,
+      "pos": 10,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -641,7 +762,7 @@
     },
     {
       "team_id": 8601,
-      "pos": 10,
+      "pos": 11,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -654,7 +775,7 @@
     },
     {
       "team_id": 760,
-      "pos": 11,
+      "pos": 12,
       "mp": 3,
       "w": 2,
       "d": 1,
@@ -667,7 +788,7 @@
     },
     {
       "team_id": 788,
-      "pos": 12,
+      "pos": 13,
       "mp": 3,
       "w": 2,
       "d": 1,
@@ -680,7 +801,7 @@
     },
     {
       "team_id": 818,
-      "pos": 13,
+      "pos": 14,
       "mp": 3,
       "w": 2,
       "d": 1,
@@ -693,7 +814,7 @@
     },
     {
       "team_id": 761,
-      "pos": 14,
+      "pos": 15,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -706,7 +827,7 @@
     },
     {
       "team_id": 759,
-      "pos": 15,
+      "pos": 16,
       "mp": 4,
       "w": 2,
       "d": 0,
@@ -714,19 +835,6 @@
       "gf": 14,
       "ga": 9,
       "gd": 5,
-      "pts": 6,
-      "form": ""
-    },
-    {
-      "team_id": 771,
-      "pos": 16,
-      "mp": 3,
-      "w": 2,
-      "d": 0,
-      "l": 1,
-      "gf": 8,
-      "ga": 4,
-      "gd": 4,
       "pts": 6,
       "form": ""
     },
@@ -848,21 +956,8 @@
       "form": ""
     },
     {
-      "team_id": 1060,
-      "pos": 26,
-      "mp": 3,
-      "w": 1,
-      "d": 1,
-      "l": 1,
-      "gf": 5,
-      "ga": 6,
-      "gd": -1,
-      "pts": 4,
-      "form": ""
-    },
-    {
       "team_id": 778,
-      "pos": 27,
+      "pos": 26,
       "mp": 3,
       "w": 1,
       "d": 1,
@@ -875,7 +970,7 @@
     },
     {
       "team_id": 791,
-      "pos": 28,
+      "pos": 27,
       "mp": 4,
       "w": 1,
       "d": 1,
@@ -888,7 +983,7 @@
     },
     {
       "team_id": 774,
-      "pos": 29,
+      "pos": 28,
       "mp": 4,
       "w": 1,
       "d": 1,
@@ -901,13 +996,26 @@
     },
     {
       "team_id": 792,
-      "pos": 30,
+      "pos": 29,
       "mp": 4,
       "w": 1,
       "d": 1,
       "l": 2,
       "gf": 7,
       "ga": 10,
+      "gd": -3,
+      "pts": 4,
+      "form": ""
+    },
+    {
+      "team_id": 1060,
+      "pos": 30,
+      "mp": 4,
+      "w": 1,
+      "d": 1,
+      "l": 2,
+      "gf": 5,
+      "ga": 8,
       "gd": -3,
       "pts": 4,
       "form": ""
@@ -1152,22 +1260,58 @@
       "rank": 1,
       "player": "Lionel Messi",
       "team_id": 762,
-      "goals": 5,
+      "goals": 6,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 34.0
+      "minutes_per_goal": 33.34
     },
     {
       "rank": 2,
-      "player": "Erling Haaland",
-      "team_id": 813,
-      "goals": 4,
-      "assists": 0,
+      "player": "Kylian Mbappé",
+      "team_id": 773,
+      "goals": 6,
+      "assists": 2,
       "shots": null,
-      "minutes_per_goal": 67.5
+      "minutes_per_goal": 43.75
     },
     {
       "rank": 3,
+      "player": "Erling Haaland",
+      "team_id": 813,
+      "goals": 5,
+      "assists": 0,
+      "shots": null,
+      "minutes_per_goal": 54.0
+    },
+    {
+      "rank": 4,
+      "player": "Harry Kane",
+      "team_id": 770,
+      "goals": 5,
+      "assists": 0,
+      "shots": null,
+      "minutes_per_goal": 70.8
+    },
+    {
+      "rank": 5,
+      "player": "Ismaïla Sarr",
+      "team_id": 0,
+      "goals": 4,
+      "assists": 1,
+      "shots": null,
+      "minutes_per_goal": 73.21
+    },
+    {
+      "rank": 6,
+      "player": "Ousmane Dembélé",
+      "team_id": 773,
+      "goals": 4,
+      "assists": 2,
+      "shots": null,
+      "minutes_per_goal": 48.0
+    },
+    {
+      "rank": 7,
       "player": "Vinicius Junior",
       "team_id": 764,
       "goals": 4,
@@ -1176,34 +1320,61 @@
       "minutes_per_goal": 70.21
     },
     {
-      "rank": 4,
-      "player": "Kylian Mbappé",
-      "team_id": 773,
-      "goals": 4,
-      "assists": 0,
-      "shots": null,
-      "minutes_per_goal": 90.0
-    },
-    {
-      "rank": 5,
+      "rank": 8,
       "player": "Matheus Cunha",
       "team_id": 764,
       "goals": 3,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 86.34
+      "minutes_per_goal": 78.34
     },
     {
-      "rank": 6,
+      "rank": 9,
+      "player": "Julián Quiñones",
+      "team_id": 769,
+      "goals": 3,
+      "assists": 1,
+      "shots": null,
+      "minutes_per_goal": 83.25
+    },
+    {
+      "rank": 10,
+      "player": "Cody Gakpo",
+      "team_id": 8601,
+      "goals": 3,
+      "assists": 1,
+      "shots": null,
+      "minutes_per_goal": 93.25
+    },
+    {
+      "rank": 11,
+      "player": "Kai Havertz",
+      "team_id": 759,
+      "goals": 3,
+      "assists": 0,
+      "shots": null,
+      "minutes_per_goal": 118.34
+    },
+    {
+      "rank": 12,
+      "player": "Yoane Wissa",
+      "team_id": 0,
+      "goals": 3,
+      "assists": 0,
+      "shots": null,
+      "minutes_per_goal": 120.0
+    },
+    {
+      "rank": 13,
       "player": "Deniz Undav",
       "team_id": 759,
       "goals": 3,
       "assists": 2,
       "shots": null,
-      "minutes_per_goal": 29.2
+      "minutes_per_goal": 29.81
     },
     {
-      "rank": 7,
+      "rank": 14,
       "player": "Johan Manzambi",
       "team_id": 788,
       "goals": 3,
@@ -1212,7 +1383,25 @@
       "minutes_per_goal": 32.25
     },
     {
-      "rank": 8,
+      "rank": 15,
+      "player": "Elijah Just",
+      "team_id": 783,
+      "goals": 3,
+      "assists": 0,
+      "shots": null,
+      "minutes_per_goal": 88.34
+    },
+    {
+      "rank": 16,
+      "player": "Brian Brobbey",
+      "team_id": 8601,
+      "goals": 3,
+      "assists": 0,
+      "shots": null,
+      "minutes_per_goal": 75.0
+    },
+    {
+      "rank": 17,
       "player": "Jonathan David",
       "team_id": 0,
       "goals": 3,
@@ -1221,112 +1410,31 @@
       "minutes_per_goal": 110.34
     },
     {
-      "rank": 9,
+      "rank": 18,
       "player": "Ismael Saibari",
       "team_id": 0,
       "goals": 3,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 110.67
-    },
-    {
-      "rank": 10,
-      "player": "Daichi Kamada",
-      "team_id": 766,
-      "goals": 2,
-      "assists": 0,
-      "shots": null,
-      "minutes_per_goal": 172.0
-    },
-    {
-      "rank": 11,
-      "player": "Ismaïla Sarr",
-      "team_id": 0,
-      "goals": 2,
-      "assists": 0,
-      "shots": null,
-      "minutes_per_goal": 172.5
-    },
-    {
-      "rank": 12,
-      "player": "Yasin Ayari",
-      "team_id": 792,
-      "goals": 2,
-      "assists": 0,
-      "shots": null,
-      "minutes_per_goal": 174.5
-    },
-    {
-      "rank": 13,
-      "player": "Ayase Ueda",
-      "team_id": 766,
-      "goals": 2,
-      "assists": 1,
-      "shots": null,
-      "minutes_per_goal": 116.0
-    },
-    {
-      "rank": 14,
-      "player": "Cyle Larin",
-      "team_id": 0,
-      "goals": 2,
-      "assists": 0,
-      "shots": null,
-      "minutes_per_goal": 81.0
-    },
-    {
-      "rank": 15,
-      "player": "Julián Quiñones",
-      "team_id": 769,
-      "goals": 2,
-      "assists": 0,
-      "shots": null,
-      "minutes_per_goal": 171.5
-    },
-    {
-      "rank": 16,
-      "player": "Cody Gakpo",
-      "team_id": 8601,
-      "goals": 2,
-      "assists": 1,
-      "shots": null,
-      "minutes_per_goal": 118.34
-    },
-    {
-      "rank": 17,
-      "player": "Aymen Hussein",
-      "team_id": 0,
-      "goals": 2,
-      "assists": 0,
-      "shots": null,
-      "minutes_per_goal": 58.0
-    },
-    {
-      "rank": 18,
-      "player": "Maximiliano Araújo",
-      "team_id": 758,
-      "goals": 2,
-      "assists": 1,
-      "shots": null,
-      "minutes_per_goal": 84.34
+      "minutes_per_goal": 120.67
     },
     {
       "rank": 19,
-      "player": "Kai Havertz",
-      "team_id": 759,
-      "goals": 2,
+      "player": "Folarin Balogun",
+      "team_id": 0,
+      "goals": 3,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 177.5
+      "minutes_per_goal": 84.0
     },
     {
       "rank": 20,
-      "player": "Cristiano Ronaldo",
-      "team_id": 765,
+      "player": "Jude Bellingham",
+      "team_id": 770,
       "goals": 2,
-      "assists": 0,
+      "assists": 1,
       "shots": null,
-      "minutes_per_goal": 135.0
+      "minutes_per_goal": 104.67
     }
   ]
 }
