@@ -16,6 +16,14 @@
     "flag_emoji": "🇲🇽"
   },
   {
+    "id": 760,
+    "name": "Spain",
+    "fifa_code": "ESP",
+    "flag_url": "https://crests.football-data.org/760.svg",
+    "group": null,
+    "flag_emoji": "🇪🇸"
+  },
+  {
     "id": 764,
     "name": "Brazil",
     "fifa_code": "BRA",
@@ -86,14 +94,6 @@
     "flag_url": "https://crests.football-data.org/8601.svg",
     "group": null,
     "flag_emoji": "🇳🇱"
-  },
-  {
-    "id": 760,
-    "name": "Spain",
-    "fifa_code": "ESP",
-    "flag_url": "https://crests.football-data.org/760.svg",
-    "group": null,
-    "flag_emoji": "🇪🇸"
   },
   {
     "id": 788,
@@ -168,14 +168,6 @@
     "flag_emoji": "🇪🇬"
   },
   {
-    "id": 816,
-    "name": "Austria",
-    "fifa_code": "AUT",
-    "flag_url": "https://crests.football-data.org/816.svg",
-    "group": null,
-    "flag_emoji": "🇦🇹"
-  },
-  {
     "id": 1934,
     "name": "Congo DR",
     "fifa_code": "COD",
@@ -230,6 +222,14 @@
     "flag_url": "https://crests.football-data.org/792.svg",
     "group": null,
     "flag_emoji": "🇸🇪"
+  },
+  {
+    "id": 816,
+    "name": "Austria",
+    "fifa_code": "AUT",
+    "flag_url": "https://crests.football-data.org/816.svg",
+    "group": null,
+    "flag_emoji": "🇦🇹"
   },
   {
     "id": 1060,
