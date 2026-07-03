@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03T17:02:38.876868Z",
+  "fetched_at": "2026-07-03T21:43:36.140511Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -99,6 +99,14 @@
       "flag_emoji": "🇧🇪"
     },
     {
+      "id": 825,
+      "name": "Egypt",
+      "fifa_code": "EGY",
+      "flag_url": "https://crests.football-data.org/825.svg",
+      "group": null,
+      "flag_emoji": "🇪🇬"
+    },
+    {
       "id": 828,
       "name": "Canada",
       "fifa_code": "CAN",
@@ -161,14 +169,6 @@
       "flag_url": "https://crests.football-data.org/766.svg",
       "group": null,
       "flag_emoji": "🇯🇵"
-    },
-    {
-      "id": 825,
-      "name": "Egypt",
-      "fifa_code": "EGY",
-      "flag_url": "https://crests.football-data.org/825.svg",
-      "group": null,
-      "flag_emoji": "🇪🇬"
     },
     {
       "id": 1934,
@@ -389,6 +389,18 @@
   ],
   "matches": [
     {
+      "id": 537428,
+      "date_utc": "2026-07-03T20:00:00Z",
+      "team_a_id": 779,
+      "team_b_id": 825,
+      "score_a": 3,
+      "score_b": 5,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "3.36 / 2.96 / 2.39"
+    },
+    {
       "id": 537429,
       "date_utc": "2026-07-03T05:00:00Z",
       "team_a_id": 788,
@@ -495,30 +507,6 @@
       "group": null,
       "status": "final",
       "odds": "3.74 / 3.51 / 1.99"
-    },
-    {
-      "id": 537418,
-      "date_utc": "2026-06-30T03:00:00Z",
-      "team_a_id": 8601,
-      "team_b_id": 815,
-      "score_a": 3,
-      "score_b": 4,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "2.1 / 3.25 / 3.71"
-    },
-    {
-      "id": 537428,
-      "date_utc": "2026-07-03T20:00:00Z",
-      "team_a_id": 779,
-      "team_b_id": 825,
-      "score_a": null,
-      "score_b": null,
-      "stage": "group",
-      "group": null,
-      "status": "scheduled",
-      "odds": "3.36 / 2.96 / 2.39"
     },
     {
       "id": 537427,
@@ -763,8 +751,21 @@
       "form": ""
     },
     {
-      "team_id": 828,
+      "team_id": 825,
       "pos": 13,
+      "mp": 4,
+      "w": 2,
+      "d": 2,
+      "l": 0,
+      "gf": 10,
+      "ga": 6,
+      "gd": 4,
+      "pts": 8,
+      "form": ""
+    },
+    {
+      "team_id": 828,
+      "pos": 14,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -777,7 +778,7 @@
     },
     {
       "team_id": 8601,
-      "pos": 14,
+      "pos": 15,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -790,7 +791,7 @@
     },
     {
       "team_id": 818,
-      "pos": 15,
+      "pos": 16,
       "mp": 3,
       "w": 2,
       "d": 1,
@@ -803,7 +804,7 @@
     },
     {
       "team_id": 761,
-      "pos": 16,
+      "pos": 17,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -816,7 +817,7 @@
     },
     {
       "team_id": 759,
-      "pos": 17,
+      "pos": 18,
       "mp": 4,
       "w": 2,
       "d": 0,
@@ -829,7 +830,7 @@
     },
     {
       "team_id": 1935,
-      "pos": 18,
+      "pos": 19,
       "mp": 4,
       "w": 2,
       "d": 0,
@@ -842,7 +843,7 @@
     },
     {
       "team_id": 799,
-      "pos": 19,
+      "pos": 20,
       "mp": 4,
       "w": 2,
       "d": 0,
@@ -855,7 +856,7 @@
     },
     {
       "team_id": 766,
-      "pos": 20,
+      "pos": 21,
       "mp": 4,
       "w": 1,
       "d": 2,
@@ -863,19 +864,6 @@
       "gf": 8,
       "ga": 5,
       "gd": 3,
-      "pts": 5,
-      "form": ""
-    },
-    {
-      "team_id": 825,
-      "pos": 21,
-      "mp": 3,
-      "w": 1,
-      "d": 2,
-      "l": 0,
-      "gf": 5,
-      "ga": 3,
-      "gd": 2,
       "pts": 5,
       "form": ""
     },
@@ -908,13 +896,13 @@
     {
       "team_id": 779,
       "pos": 24,
-      "mp": 3,
+      "mp": 4,
       "w": 1,
       "d": 1,
-      "l": 1,
-      "gf": 2,
-      "ga": 2,
-      "gd": 0,
+      "l": 2,
+      "gf": 5,
+      "ga": 7,
+      "gd": -2,
       "pts": 4,
       "form": ""
     },

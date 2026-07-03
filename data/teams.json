@@ -96,6 +96,14 @@
     "flag_emoji": "🇧🇪"
   },
   {
+    "id": 825,
+    "name": "Egypt",
+    "fifa_code": "EGY",
+    "flag_url": "https://crests.football-data.org/825.svg",
+    "group": null,
+    "flag_emoji": "🇪🇬"
+  },
+  {
     "id": 828,
     "name": "Canada",
     "fifa_code": "CAN",
@@ -158,14 +166,6 @@
     "flag_url": "https://crests.football-data.org/766.svg",
     "group": null,
     "flag_emoji": "🇯🇵"
-  },
-  {
-    "id": 825,
-    "name": "Egypt",
-    "fifa_code": "EGY",
-    "flag_url": "https://crests.football-data.org/825.svg",
-    "group": null,
-    "flag_emoji": "🇪🇬"
   },
   {
     "id": 1934,
