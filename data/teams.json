@@ -32,6 +32,14 @@
     "flag_emoji": "🇧🇷"
   },
   {
+    "id": 788,
+    "name": "Switzerland",
+    "fifa_code": "SUI",
+    "flag_url": "https://crests.football-data.org/788.svg",
+    "group": null,
+    "flag_emoji": "🇨🇭"
+  },
+  {
     "id": 770,
     "name": "England",
     "fifa_code": "ENG",
@@ -72,6 +80,14 @@
     "flag_emoji": "🇳🇴"
   },
   {
+    "id": 765,
+    "name": "Portugal",
+    "fifa_code": "POR",
+    "flag_url": "https://crests.football-data.org/765.svg",
+    "group": null,
+    "flag_emoji": "🇵🇹"
+  },
+  {
     "id": 805,
     "name": "Belgium",
     "fifa_code": "BEL",
@@ -94,14 +110,6 @@
     "flag_url": "https://crests.football-data.org/8601.svg",
     "group": null,
     "flag_emoji": "🇳🇱"
-  },
-  {
-    "id": 788,
-    "name": "Switzerland",
-    "fifa_code": "SUI",
-    "flag_url": "https://crests.football-data.org/788.svg",
-    "group": null,
-    "flag_emoji": "🇨🇭"
   },
   {
     "id": 818,
@@ -144,14 +152,6 @@
     "flag_emoji": "🇭🇷"
   },
   {
-    "id": 765,
-    "name": "Portugal",
-    "fifa_code": "POR",
-    "flag_url": "https://crests.football-data.org/765.svg",
-    "group": null,
-    "flag_emoji": "🇵🇹"
-  },
-  {
     "id": 766,
     "name": "Japan",
     "fifa_code": "JPN",
@@ -192,14 +192,6 @@
     "flag_emoji": "🇦🇺"
   },
   {
-    "id": 778,
-    "name": "Algeria",
-    "fifa_code": "ALG",
-    "flag_url": "https://crests.football-data.org/algeria.svg",
-    "group": null,
-    "flag_emoji": "🇦🇱"
-  },
-  {
     "id": 791,
     "name": "Ecuador",
     "fifa_code": "ECU",
@@ -238,6 +230,14 @@
     "flag_url": "https://crests.football-data.org/bosnia.svg",
     "group": null,
     "flag_emoji": "🇧🇦"
+  },
+  {
+    "id": 778,
+    "name": "Algeria",
+    "fifa_code": "ALG",
+    "flag_url": "https://crests.football-data.org/algeria.svg",
+    "group": null,
+    "flag_emoji": "🇦🇱"
   },
   {
     "id": 804,
