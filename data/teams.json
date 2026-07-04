@@ -8,6 +8,14 @@
     "flag_emoji": "🇫🇷"
   },
   {
+    "id": 762,
+    "name": "Argentina",
+    "fifa_code": "ARG",
+    "flag_url": "https://crests.football-data.org/762.png",
+    "group": null,
+    "flag_emoji": "🇦🇷"
+  },
+  {
     "id": 769,
     "name": "Mexico",
     "fifa_code": "MEX",
@@ -56,12 +64,12 @@
     "flag_emoji": "🇲🇦"
   },
   {
-    "id": 762,
-    "name": "Argentina",
-    "fifa_code": "ARG",
-    "flag_url": "https://crests.football-data.org/762.png",
+    "id": 818,
+    "name": "Colombia",
+    "fifa_code": "COL",
+    "flag_url": "https://crests.football-data.org/818.svg",
     "group": null,
-    "flag_emoji": "🇦🇷"
+    "flag_emoji": "🇨🇴"
   },
   {
     "id": 771,
@@ -118,14 +126,6 @@
     "flag_url": "https://crests.football-data.org/8601.svg",
     "group": null,
     "flag_emoji": "🇳🇱"
-  },
-  {
-    "id": 818,
-    "name": "Colombia",
-    "fifa_code": "COL",
-    "flag_url": "https://crests.football-data.org/818.svg",
-    "group": null,
-    "flag_emoji": "🇨🇴"
   },
   {
     "id": 761,

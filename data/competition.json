@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03T21:43:36.140511Z",
+  "fetched_at": "2026-07-04T08:12:30.317501Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -9,6 +9,14 @@
       "flag_url": "https://crests.football-data.org/773.svg",
       "group": null,
       "flag_emoji": "🇫🇷"
+    },
+    {
+      "id": 762,
+      "name": "Argentina",
+      "fifa_code": "ARG",
+      "flag_url": "https://crests.football-data.org/762.png",
+      "group": null,
+      "flag_emoji": "🇦🇷"
     },
     {
       "id": 769,
@@ -59,12 +67,12 @@
       "flag_emoji": "🇲🇦"
     },
     {
-      "id": 762,
-      "name": "Argentina",
-      "fifa_code": "ARG",
-      "flag_url": "https://crests.football-data.org/762.png",
+      "id": 818,
+      "name": "Colombia",
+      "fifa_code": "COL",
+      "flag_url": "https://crests.football-data.org/818.svg",
       "group": null,
-      "flag_emoji": "🇦🇷"
+      "flag_emoji": "🇨🇴"
     },
     {
       "id": 771,
@@ -121,14 +129,6 @@
       "flag_url": "https://crests.football-data.org/8601.svg",
       "group": null,
       "flag_emoji": "🇳🇱"
-    },
-    {
-      "id": 818,
-      "name": "Colombia",
-      "fifa_code": "COL",
-      "flag_url": "https://crests.football-data.org/818.svg",
-      "group": null,
-      "flag_emoji": "🇨🇴"
     },
     {
       "id": 761,
@@ -389,6 +389,30 @@
   ],
   "matches": [
     {
+      "id": 537430,
+      "date_utc": "2026-07-04T03:30:00Z",
+      "team_a_id": 818,
+      "team_b_id": 763,
+      "score_a": 1,
+      "score_b": 0,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "1.77 / 3.37 / 5.12"
+    },
+    {
+      "id": 537427,
+      "date_utc": "2026-07-04T00:00:00Z",
+      "team_a_id": 762,
+      "team_b_id": 1930,
+      "score_a": 3,
+      "score_b": 2,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "1.17 / 7.38 / 17.18"
+    },
+    {
       "id": 537428,
       "date_utc": "2026-07-03T20:00:00Z",
       "team_a_id": 779,
@@ -485,54 +509,6 @@
       "odds": "2.16 / 3.06 / 3.82"
     },
     {
-      "id": 537416,
-      "date_utc": "2026-06-30T23:00:00Z",
-      "team_a_id": 773,
-      "team_b_id": 792,
-      "score_a": 3,
-      "score_b": 0,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "1.33 / 5.34 / 9.43"
-    },
-    {
-      "id": 537424,
-      "date_utc": "2026-06-30T19:00:00Z",
-      "team_a_id": 1935,
-      "team_b_id": 8872,
-      "score_a": 1,
-      "score_b": 2,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "3.74 / 3.51 / 1.99"
-    },
-    {
-      "id": 537427,
-      "date_utc": "2026-07-04T00:00:00Z",
-      "team_a_id": 762,
-      "team_b_id": 1930,
-      "score_a": null,
-      "score_b": null,
-      "stage": "group",
-      "group": null,
-      "status": "scheduled",
-      "odds": "1.17 / 7.38 / 17.18"
-    },
-    {
-      "id": 537430,
-      "date_utc": "2026-07-04T03:30:00Z",
-      "team_a_id": 818,
-      "team_b_id": 763,
-      "score_a": null,
-      "score_b": null,
-      "stage": "group",
-      "group": null,
-      "status": "scheduled",
-      "odds": "1.77 / 3.37 / 5.12"
-    },
-    {
       "id": 537376,
       "date_utc": "2026-07-04T19:00:00Z",
       "team_a_id": 828,
@@ -608,8 +584,21 @@
       "form": ""
     },
     {
-      "team_id": 769,
+      "team_id": 762,
       "pos": 2,
+      "mp": 4,
+      "w": 4,
+      "d": 0,
+      "l": 0,
+      "gf": 11,
+      "ga": 3,
+      "gd": 8,
+      "pts": 12,
+      "form": ""
+    },
+    {
+      "team_id": 769,
+      "pos": 3,
       "mp": 4,
       "w": 4,
       "d": 0,
@@ -622,7 +611,7 @@
     },
     {
       "team_id": 760,
-      "pos": 3,
+      "pos": 4,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -635,7 +624,7 @@
     },
     {
       "team_id": 764,
-      "pos": 4,
+      "pos": 5,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -648,7 +637,7 @@
     },
     {
       "team_id": 788,
-      "pos": 5,
+      "pos": 6,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -661,7 +650,7 @@
     },
     {
       "team_id": 770,
-      "pos": 6,
+      "pos": 7,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -674,7 +663,7 @@
     },
     {
       "team_id": 815,
-      "pos": 7,
+      "pos": 8,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -686,21 +675,21 @@
       "form": ""
     },
     {
-      "team_id": 762,
-      "pos": 8,
-      "mp": 3,
+      "team_id": 818,
+      "pos": 9,
+      "mp": 4,
       "w": 3,
-      "d": 0,
+      "d": 1,
       "l": 0,
-      "gf": 8,
+      "gf": 5,
       "ga": 1,
-      "gd": 7,
-      "pts": 9,
+      "gd": 4,
+      "pts": 10,
       "form": ""
     },
     {
       "team_id": 771,
-      "pos": 9,
+      "pos": 10,
       "mp": 4,
       "w": 3,
       "d": 0,
@@ -713,7 +702,7 @@
     },
     {
       "team_id": 8872,
-      "pos": 10,
+      "pos": 11,
       "mp": 4,
       "w": 3,
       "d": 0,
@@ -726,7 +715,7 @@
     },
     {
       "team_id": 765,
-      "pos": 11,
+      "pos": 12,
       "mp": 4,
       "w": 2,
       "d": 2,
@@ -739,7 +728,7 @@
     },
     {
       "team_id": 805,
-      "pos": 12,
+      "pos": 13,
       "mp": 4,
       "w": 2,
       "d": 2,
@@ -752,7 +741,7 @@
     },
     {
       "team_id": 825,
-      "pos": 13,
+      "pos": 14,
       "mp": 4,
       "w": 2,
       "d": 2,
@@ -765,7 +754,7 @@
     },
     {
       "team_id": 828,
-      "pos": 14,
+      "pos": 15,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -778,7 +767,7 @@
     },
     {
       "team_id": 8601,
-      "pos": 15,
+      "pos": 16,
       "mp": 4,
       "w": 2,
       "d": 1,
@@ -786,19 +775,6 @@
       "gf": 13,
       "ga": 8,
       "gd": 5,
-      "pts": 7,
-      "form": ""
-    },
-    {
-      "team_id": 818,
-      "pos": 16,
-      "mp": 3,
-      "w": 2,
-      "d": 1,
-      "l": 0,
-      "gf": 4,
-      "ga": 1,
-      "gd": 3,
       "pts": 7,
       "form": ""
     },
@@ -883,13 +859,13 @@
     {
       "team_id": 763,
       "pos": 23,
-      "mp": 3,
+      "mp": 4,
       "w": 1,
       "d": 1,
-      "l": 1,
+      "l": 2,
       "gf": 2,
-      "ga": 2,
-      "gd": 0,
+      "ga": 3,
+      "gd": -1,
       "pts": 4,
       "form": ""
     },
@@ -1013,13 +989,13 @@
     {
       "team_id": 1930,
       "pos": 33,
-      "mp": 3,
+      "mp": 4,
       "w": 1,
       "d": 0,
-      "l": 2,
-      "gf": 2,
-      "ga": 2,
-      "gd": 0,
+      "l": 3,
+      "gf": 4,
+      "ga": 5,
+      "gd": -1,
       "pts": 3,
       "form": ""
     },
