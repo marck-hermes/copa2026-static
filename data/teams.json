@@ -1,5 +1,13 @@
 [
   {
+    "id": 815,
+    "name": "Morocco",
+    "fifa_code": "MAR",
+    "flag_url": "https://crests.football-data.org/morocco.svg",
+    "group": null,
+    "flag_emoji": "🇲🇦"
+  },
+  {
     "id": 773,
     "name": "France",
     "fifa_code": "FRA",
@@ -56,14 +64,6 @@
     "flag_emoji": "🇬🇧"
   },
   {
-    "id": 815,
-    "name": "Morocco",
-    "fifa_code": "MAR",
-    "flag_url": "https://crests.football-data.org/morocco.svg",
-    "group": null,
-    "flag_emoji": "🇲🇦"
-  },
-  {
     "id": 818,
     "name": "Colombia",
     "fifa_code": "COL",
@@ -112,20 +112,20 @@
     "flag_emoji": "🇪🇬"
   },
   {
-    "id": 828,
-    "name": "Canada",
-    "fifa_code": "CAN",
-    "flag_url": "https://crests.football-data.org/canada.svg",
-    "group": null,
-    "flag_emoji": "🇨🇦"
-  },
-  {
     "id": 8601,
     "name": "Netherlands",
     "fifa_code": "NED",
     "flag_url": "https://crests.football-data.org/8601.svg",
     "group": null,
     "flag_emoji": "🇳🇱"
+  },
+  {
+    "id": 828,
+    "name": "Canada",
+    "fifa_code": "CAN",
+    "flag_url": "https://crests.football-data.org/canada.svg",
+    "group": null,
+    "flag_emoji": "🇨🇦"
   },
   {
     "id": 761,
