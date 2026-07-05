@@ -1,19 +1,19 @@
 [
   {
-    "id": 815,
-    "name": "Morocco",
-    "fifa_code": "MAR",
-    "flag_url": "https://crests.football-data.org/morocco.svg",
-    "group": null,
-    "flag_emoji": "🇲🇦"
-  },
-  {
     "id": 773,
     "name": "France",
     "fifa_code": "FRA",
     "flag_url": "https://crests.football-data.org/773.svg",
     "group": null,
     "flag_emoji": "🇫🇷"
+  },
+  {
+    "id": 815,
+    "name": "Morocco",
+    "fifa_code": "MAR",
+    "flag_url": "https://crests.football-data.org/morocco.svg",
+    "group": null,
+    "flag_emoji": "🇲🇦"
   },
   {
     "id": 762,
