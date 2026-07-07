@@ -24,6 +24,14 @@
     "flag_emoji": "🇪🇸"
   },
   {
+    "id": 788,
+    "name": "Switzerland",
+    "fifa_code": "SUI",
+    "flag_url": "https://crests.football-data.org/788.svg",
+    "group": null,
+    "flag_emoji": "🇨🇭"
+  },
+  {
     "id": 815,
     "name": "Morocco",
     "fifa_code": "MAR",
@@ -70,14 +78,6 @@
     "flag_url": "https://crests.football-data.org/764.svg",
     "group": null,
     "flag_emoji": "🇧🇷"
-  },
-  {
-    "id": 788,
-    "name": "Switzerland",
-    "fifa_code": "SUI",
-    "flag_url": "https://crests.football-data.org/788.svg",
-    "group": null,
-    "flag_emoji": "🇨🇭"
   },
   {
     "id": 818,

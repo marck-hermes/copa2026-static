@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-07T19:16:41.873467Z",
+  "fetched_at": "2026-07-07T23:31:02.504689Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -25,6 +25,14 @@
       "flag_url": "https://crests.football-data.org/760.svg",
       "group": null,
       "flag_emoji": "🇪🇸"
+    },
+    {
+      "id": 788,
+      "name": "Switzerland",
+      "fifa_code": "SUI",
+      "flag_url": "https://crests.football-data.org/788.svg",
+      "group": null,
+      "flag_emoji": "🇨🇭"
     },
     {
       "id": 815,
@@ -73,14 +81,6 @@
       "flag_url": "https://crests.football-data.org/764.svg",
       "group": null,
       "flag_emoji": "🇧🇷"
-    },
-    {
-      "id": 788,
-      "name": "Switzerland",
-      "fifa_code": "SUI",
-      "flag_url": "https://crests.football-data.org/788.svg",
-      "group": null,
-      "flag_emoji": "🇨🇭"
     },
     {
       "id": 818,
@@ -389,6 +389,18 @@
   ],
   "matches": [
     {
+      "id": 537382,
+      "date_utc": "2026-07-07T22:00:00Z",
+      "team_a_id": 788,
+      "team_b_id": 818,
+      "score_a": 4,
+      "score_b": 3,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "3.49 / 3.16 / 2.25"
+    },
+    {
       "id": 537381,
       "date_utc": "2026-07-07T18:00:00Z",
       "team_a_id": 762,
@@ -495,18 +507,6 @@
       "group": null,
       "status": "final",
       "odds": "1.17 / 7.38 / 17.18"
-    },
-    {
-      "id": 537428,
-      "date_utc": "2026-07-03T20:00:00Z",
-      "team_a_id": 779,
-      "team_b_id": 825,
-      "score_a": 3,
-      "score_b": 5,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "3.36 / 2.96 / 2.39"
     }
   ],
   "standings": [
@@ -550,7 +550,7 @@
       "form": ""
     },
     {
-      "team_id": 815,
+      "team_id": 788,
       "pos": 4,
       "mp": 5,
       "w": 4,
@@ -563,8 +563,21 @@
       "form": ""
     },
     {
-      "team_id": 770,
+      "team_id": 815,
       "pos": 5,
+      "mp": 5,
+      "w": 4,
+      "d": 1,
+      "l": 0,
+      "gf": 13,
+      "ga": 6,
+      "gd": 7,
+      "pts": 13,
+      "form": ""
+    },
+    {
+      "team_id": 770,
+      "pos": 6,
       "mp": 5,
       "w": 4,
       "d": 1,
@@ -577,7 +590,7 @@
     },
     {
       "team_id": 769,
-      "pos": 6,
+      "pos": 7,
       "mp": 5,
       "w": 4,
       "d": 0,
@@ -590,7 +603,7 @@
     },
     {
       "team_id": 8872,
-      "pos": 7,
+      "pos": 8,
       "mp": 5,
       "w": 4,
       "d": 0,
@@ -603,7 +616,7 @@
     },
     {
       "team_id": 805,
-      "pos": 8,
+      "pos": 9,
       "mp": 5,
       "w": 3,
       "d": 2,
@@ -616,7 +629,7 @@
     },
     {
       "team_id": 764,
-      "pos": 9,
+      "pos": 10,
       "mp": 5,
       "w": 3,
       "d": 1,
@@ -628,28 +641,15 @@
       "form": ""
     },
     {
-      "team_id": 788,
-      "pos": 10,
-      "mp": 4,
-      "w": 3,
-      "d": 1,
-      "l": 0,
-      "gf": 9,
-      "ga": 3,
-      "gd": 6,
-      "pts": 10,
-      "form": ""
-    },
-    {
       "team_id": 818,
       "pos": 11,
-      "mp": 4,
+      "mp": 5,
       "w": 3,
       "d": 1,
-      "l": 0,
-      "gf": 5,
-      "ga": 1,
-      "gd": 4,
+      "l": 1,
+      "gf": 8,
+      "ga": 5,
+      "gd": 3,
       "pts": 10,
       "form": ""
     },
