@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-06T20:58:30.094374Z",
+  "fetched_at": "2026-07-07T10:33:48.988703Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -9,6 +9,14 @@
       "flag_url": "https://crests.football-data.org/773.svg",
       "group": null,
       "flag_emoji": "🇫🇷"
+    },
+    {
+      "id": 760,
+      "name": "Spain",
+      "fifa_code": "ESP",
+      "flag_url": "https://crests.football-data.org/760.svg",
+      "group": null,
+      "flag_emoji": "🇪🇸"
     },
     {
       "id": 815,
@@ -51,12 +59,12 @@
       "flag_emoji": "🇳🇴"
     },
     {
-      "id": 760,
-      "name": "Spain",
-      "fifa_code": "ESP",
-      "flag_url": "https://crests.football-data.org/760.svg",
+      "id": 805,
+      "name": "Belgium",
+      "fifa_code": "BEL",
+      "flag_url": "https://crests.football-data.org/805.svg",
       "group": null,
-      "flag_emoji": "🇪🇸"
+      "flag_emoji": "🇧🇪"
     },
     {
       "id": 764,
@@ -97,14 +105,6 @@
       "flag_url": "https://crests.football-data.org/765.svg",
       "group": null,
       "flag_emoji": "🇵🇹"
-    },
-    {
-      "id": 805,
-      "name": "Belgium",
-      "fifa_code": "BEL",
-      "flag_url": "https://crests.football-data.org/805.svg",
-      "group": null,
-      "flag_emoji": "🇧🇪"
     },
     {
       "id": 825,
@@ -389,12 +389,24 @@
   ],
   "matches": [
     {
+      "id": 537380,
+      "date_utc": "2026-07-07T02:00:00Z",
+      "team_a_id": 771,
+      "team_b_id": 805,
+      "score_a": 1,
+      "score_b": 4,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "2.56 / 3.4 / 2.7"
+    },
+    {
       "id": 537379,
       "date_utc": "2026-07-06T21:00:00Z",
       "team_a_id": 765,
       "team_b_id": 760,
       "score_a": 0,
-      "score_b": 0,
+      "score_b": 1,
       "stage": "group",
       "group": null,
       "status": "final",
@@ -495,30 +507,6 @@
       "group": null,
       "status": "final",
       "odds": "1.63 / 3.9 / 5.45"
-    },
-    {
-      "id": 537419,
-      "date_utc": "2026-07-03T01:00:00Z",
-      "team_a_id": 765,
-      "team_b_id": 799,
-      "score_a": 2,
-      "score_b": 1,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "1.91 / 3.33 / 4.33"
-    },
-    {
-      "id": 537380,
-      "date_utc": "2026-07-07T02:00:00Z",
-      "team_a_id": 771,
-      "team_b_id": 805,
-      "score_a": null,
-      "score_b": null,
-      "stage": "group",
-      "group": null,
-      "status": "scheduled",
-      "odds": "/  /"
     }
   ],
   "standings": [
@@ -536,8 +524,21 @@
       "form": ""
     },
     {
-      "team_id": 815,
+      "team_id": 760,
       "pos": 2,
+      "mp": 5,
+      "w": 4,
+      "d": 1,
+      "l": 0,
+      "gf": 9,
+      "ga": 0,
+      "gd": 9,
+      "pts": 13,
+      "form": ""
+    },
+    {
+      "team_id": 815,
+      "pos": 3,
       "mp": 5,
       "w": 4,
       "d": 1,
@@ -550,7 +551,7 @@
     },
     {
       "team_id": 770,
-      "pos": 3,
+      "pos": 4,
       "mp": 5,
       "w": 4,
       "d": 1,
@@ -563,7 +564,7 @@
     },
     {
       "team_id": 762,
-      "pos": 4,
+      "pos": 5,
       "mp": 4,
       "w": 4,
       "d": 0,
@@ -576,7 +577,7 @@
     },
     {
       "team_id": 769,
-      "pos": 5,
+      "pos": 6,
       "mp": 5,
       "w": 4,
       "d": 0,
@@ -589,7 +590,7 @@
     },
     {
       "team_id": 8872,
-      "pos": 6,
+      "pos": 7,
       "mp": 5,
       "w": 4,
       "d": 0,
@@ -601,21 +602,21 @@
       "form": ""
     },
     {
-      "team_id": 760,
-      "pos": 7,
-      "mp": 4,
+      "team_id": 805,
+      "pos": 8,
+      "mp": 5,
       "w": 3,
-      "d": 1,
+      "d": 2,
       "l": 0,
-      "gf": 8,
-      "ga": 0,
+      "gf": 13,
+      "ga": 5,
       "gd": 8,
-      "pts": 10,
+      "pts": 11,
       "form": ""
     },
     {
       "team_id": 764,
-      "pos": 8,
+      "pos": 9,
       "mp": 5,
       "w": 3,
       "d": 1,
@@ -628,7 +629,7 @@
     },
     {
       "team_id": 788,
-      "pos": 9,
+      "pos": 10,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -641,7 +642,7 @@
     },
     {
       "team_id": 818,
-      "pos": 10,
+      "pos": 11,
       "mp": 4,
       "w": 3,
       "d": 1,
@@ -654,39 +655,26 @@
     },
     {
       "team_id": 771,
-      "pos": 11,
-      "mp": 4,
+      "pos": 12,
+      "mp": 5,
       "w": 3,
       "d": 0,
-      "l": 1,
-      "gf": 10,
-      "ga": 4,
-      "gd": 6,
+      "l": 2,
+      "gf": 11,
+      "ga": 8,
+      "gd": 3,
       "pts": 9,
       "form": ""
     },
     {
       "team_id": 765,
-      "pos": 12,
-      "mp": 4,
-      "w": 2,
-      "d": 2,
-      "l": 0,
-      "gf": 8,
-      "ga": 2,
-      "gd": 6,
-      "pts": 8,
-      "form": ""
-    },
-    {
-      "team_id": 805,
       "pos": 13,
-      "mp": 4,
+      "mp": 5,
       "w": 2,
       "d": 2,
-      "l": 0,
-      "gf": 9,
-      "ga": 4,
+      "l": 1,
+      "gf": 8,
+      "ga": 3,
       "gd": 5,
       "pts": 8,
       "form": ""
@@ -1317,7 +1305,7 @@
       "goals": 3,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 84.0
+      "minutes_per_goal": 114.0
     },
     {
       "rank": 20,

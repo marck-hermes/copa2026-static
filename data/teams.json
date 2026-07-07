@@ -8,6 +8,14 @@
     "flag_emoji": "🇫🇷"
   },
   {
+    "id": 760,
+    "name": "Spain",
+    "fifa_code": "ESP",
+    "flag_url": "https://crests.football-data.org/760.svg",
+    "group": null,
+    "flag_emoji": "🇪🇸"
+  },
+  {
     "id": 815,
     "name": "Morocco",
     "fifa_code": "MAR",
@@ -48,12 +56,12 @@
     "flag_emoji": "🇳🇴"
   },
   {
-    "id": 760,
-    "name": "Spain",
-    "fifa_code": "ESP",
-    "flag_url": "https://crests.football-data.org/760.svg",
+    "id": 805,
+    "name": "Belgium",
+    "fifa_code": "BEL",
+    "flag_url": "https://crests.football-data.org/805.svg",
     "group": null,
-    "flag_emoji": "🇪🇸"
+    "flag_emoji": "🇧🇪"
   },
   {
     "id": 764,
@@ -94,14 +102,6 @@
     "flag_url": "https://crests.football-data.org/765.svg",
     "group": null,
     "flag_emoji": "🇵🇹"
-  },
-  {
-    "id": 805,
-    "name": "Belgium",
-    "fifa_code": "BEL",
-    "flag_url": "https://crests.football-data.org/805.svg",
-    "group": null,
-    "flag_emoji": "🇧🇪"
   },
   {
     "id": 825,
