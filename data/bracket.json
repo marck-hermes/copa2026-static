@@ -12,7 +12,7 @@
   {
     "round": "32",
     "match_num": 2,
-    "team_a_id": 760,
+    "team_a_id": 762,
     "team_b_id": 804,
     "score_a": null,
     "score_b": null,
@@ -22,7 +22,7 @@
   {
     "round": "32",
     "match_num": 3,
-    "team_a_id": 815,
+    "team_a_id": 760,
     "team_b_id": 778,
     "score_a": null,
     "score_b": null,
@@ -32,7 +32,7 @@
   {
     "round": "32",
     "match_num": 4,
-    "team_a_id": 770,
+    "team_a_id": 815,
     "team_b_id": 1060,
     "score_a": null,
     "score_b": null,
@@ -42,7 +42,7 @@
   {
     "round": "32",
     "match_num": 5,
-    "team_a_id": 762,
+    "team_a_id": 770,
     "team_b_id": 816,
     "score_a": null,
     "score_b": null,
