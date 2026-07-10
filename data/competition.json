@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-10T11:22:46.458789Z",
+  "fetched_at": "2026-07-10T18:08:20.562178Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -507,6 +507,18 @@
       "group": null,
       "status": "final",
       "odds": "1.77 / 3.37 / 5.12"
+    },
+    {
+      "id": 537384,
+      "date_utc": "2026-07-10T21:00:00Z",
+      "team_a_id": 760,
+      "team_b_id": 805,
+      "score_a": null,
+      "score_b": null,
+      "stage": "group",
+      "group": null,
+      "status": "scheduled",
+      "odds": "1.63 / 3.92 / 5.49"
     }
   ],
   "standings": [
