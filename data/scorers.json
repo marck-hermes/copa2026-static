@@ -24,7 +24,7 @@
     "goals": 5,
     "assists": 0,
     "shots": null,
-    "minutes_per_goal": 72.0
+    "minutes_per_goal": 90.0
   },
   {
     "rank": 4,
@@ -33,7 +33,7 @@
     "goals": 5,
     "assists": 0,
     "shots": null,
-    "minutes_per_goal": 88.8
+    "minutes_per_goal": 106.8
   },
   {
     "rank": 5,
@@ -177,6 +177,6 @@
     "goals": 2,
     "assists": 1,
     "shots": null,
-    "minutes_per_goal": 134.67
+    "minutes_per_goal": 164.67
   }
 ]
