@@ -8,14 +8,6 @@
     "flag_emoji": "🇫🇷"
   },
   {
-    "id": 760,
-    "name": "Spain",
-    "fifa_code": "ESP",
-    "flag_url": "https://crests.football-data.org/760.svg",
-    "group": null,
-    "flag_emoji": "🇪🇸"
-  },
-  {
     "id": 762,
     "name": "Argentina",
     "fifa_code": "ARG",
@@ -24,12 +16,12 @@
     "flag_emoji": "🇦🇷"
   },
   {
-    "id": 788,
-    "name": "Switzerland",
-    "fifa_code": "SUI",
-    "flag_url": "https://crests.football-data.org/788.svg",
+    "id": 760,
+    "name": "Spain",
+    "fifa_code": "ESP",
+    "flag_url": "https://crests.football-data.org/760.svg",
     "group": null,
-    "flag_emoji": "🇨🇭"
+    "flag_emoji": "🇪🇸"
   },
   {
     "id": 770,
@@ -38,6 +30,14 @@
     "flag_url": "https://crests.football-data.org/770.svg",
     "group": null,
     "flag_emoji": "🇬🇧"
+  },
+  {
+    "id": 788,
+    "name": "Switzerland",
+    "fifa_code": "SUI",
+    "flag_url": "https://crests.football-data.org/788.svg",
+    "group": null,
+    "flag_emoji": "🇨🇭"
   },
   {
     "id": 815,

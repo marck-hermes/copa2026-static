@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-11T22:32:01.406625Z",
+  "fetched_at": "2026-07-12T07:49:54.018606Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -11,14 +11,6 @@
       "flag_emoji": "🇫🇷"
     },
     {
-      "id": 760,
-      "name": "Spain",
-      "fifa_code": "ESP",
-      "flag_url": "https://crests.football-data.org/760.svg",
-      "group": null,
-      "flag_emoji": "🇪🇸"
-    },
-    {
       "id": 762,
       "name": "Argentina",
       "fifa_code": "ARG",
@@ -27,12 +19,12 @@
       "flag_emoji": "🇦🇷"
     },
     {
-      "id": 788,
-      "name": "Switzerland",
-      "fifa_code": "SUI",
-      "flag_url": "https://crests.football-data.org/788.svg",
+      "id": 760,
+      "name": "Spain",
+      "fifa_code": "ESP",
+      "flag_url": "https://crests.football-data.org/760.svg",
       "group": null,
-      "flag_emoji": "🇨🇭"
+      "flag_emoji": "🇪🇸"
     },
     {
       "id": 770,
@@ -41,6 +33,14 @@
       "flag_url": "https://crests.football-data.org/770.svg",
       "group": null,
       "flag_emoji": "🇬🇧"
+    },
+    {
+      "id": 788,
+      "name": "Switzerland",
+      "fifa_code": "SUI",
+      "flag_url": "https://crests.football-data.org/788.svg",
+      "group": null,
+      "flag_emoji": "🇨🇭"
     },
     {
       "id": 815,
@@ -389,12 +389,24 @@
   ],
   "matches": [
     {
+      "id": 537386,
+      "date_utc": "2026-07-12T03:00:00Z",
+      "team_a_id": 762,
+      "team_b_id": 788,
+      "score_a": 3,
+      "score_b": 1,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "1.73 / 3.49 / 5.34"
+    },
+    {
       "id": 537385,
       "date_utc": "2026-07-11T23:00:00Z",
       "team_a_id": 8872,
       "team_b_id": 770,
-      "score_a": null,
-      "score_b": null,
+      "score_a": 1,
+      "score_b": 2,
       "stage": "group",
       "group": null,
       "status": "final",
@@ -495,18 +507,6 @@
       "group": null,
       "status": "final",
       "odds": "1.89 / 3.62 / 4.02"
-    },
-    {
-      "id": 537375,
-      "date_utc": "2026-07-04T23:00:00Z",
-      "team_a_id": 761,
-      "team_b_id": 773,
-      "score_a": 0,
-      "score_b": 1,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "16.14 / 6.83 / 1.19"
     }
   ],
   "standings": [
@@ -524,8 +524,21 @@
       "form": ""
     },
     {
-      "team_id": 760,
+      "team_id": 762,
       "pos": 2,
+      "mp": 6,
+      "w": 6,
+      "d": 0,
+      "l": 0,
+      "gf": 17,
+      "ga": 6,
+      "gd": 11,
+      "pts": 18,
+      "form": ""
+    },
+    {
+      "team_id": 760,
+      "pos": 3,
       "mp": 6,
       "w": 5,
       "d": 1,
@@ -537,41 +550,28 @@
       "form": ""
     },
     {
-      "team_id": 762,
-      "pos": 3,
-      "mp": 5,
-      "w": 5,
-      "d": 0,
-      "l": 0,
-      "gf": 14,
-      "ga": 5,
-      "gd": 9,
-      "pts": 15,
-      "form": ""
-    },
-    {
-      "team_id": 788,
+      "team_id": 770,
       "pos": 4,
-      "mp": 5,
-      "w": 4,
+      "mp": 6,
+      "w": 5,
       "d": 1,
       "l": 0,
       "gf": 13,
       "ga": 6,
       "gd": 7,
-      "pts": 13,
+      "pts": 16,
       "form": ""
     },
     {
-      "team_id": 770,
+      "team_id": 788,
       "pos": 5,
-      "mp": 5,
+      "mp": 6,
       "w": 4,
       "d": 1,
-      "l": 0,
-      "gf": 11,
-      "ga": 5,
-      "gd": 6,
+      "l": 1,
+      "gf": 14,
+      "ga": 9,
+      "gd": 5,
       "pts": 13,
       "form": ""
     },
@@ -604,13 +604,13 @@
     {
       "team_id": 8872,
       "pos": 8,
-      "mp": 5,
+      "mp": 6,
       "w": 4,
       "d": 0,
-      "l": 1,
-      "gf": 12,
-      "ga": 9,
-      "gd": 3,
+      "l": 2,
+      "gf": 13,
+      "ga": 11,
+      "gd": 2,
       "pts": 12,
       "form": ""
     },
@@ -1143,7 +1143,7 @@
       "goals": 6,
       "assists": 0,
       "shots": null,
-      "minutes_per_goal": 48.34
+      "minutes_per_goal": 63.34
     },
     {
       "rank": 2,
