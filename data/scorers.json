@@ -3,40 +3,58 @@
     "rank": 1,
     "player": "Lionel Messi",
     "team_id": 762,
-    "goals": 6,
-    "assists": 0,
+    "goals": 8,
+    "assists": 2,
     "shots": null,
-    "minutes_per_goal": 63.34
+    "minutes_per_goal": 53.0
   },
   {
     "rank": 2,
     "player": "Kylian Mbappé",
     "team_id": 773,
-    "goals": 6,
+    "goals": 8,
     "assists": 2,
     "shots": null,
-    "minutes_per_goal": 66.25
+    "minutes_per_goal": 51.71
   },
   {
     "rank": 3,
     "player": "Erling Haaland",
     "team_id": 813,
-    "goals": 5,
+    "goals": 7,
     "assists": 0,
     "shots": null,
-    "minutes_per_goal": 90.0
+    "minutes_per_goal": 68.58
   },
   {
     "rank": 4,
-    "player": "Harry Kane",
+    "player": "Jude Bellingham",
     "team_id": 770,
-    "goals": 5,
-    "assists": 0,
+    "goals": 6,
+    "assists": 1,
     "shots": null,
-    "minutes_per_goal": 106.8
+    "minutes_per_goal": 73.58
   },
   {
     "rank": 5,
+    "player": "Harry Kane",
+    "team_id": 770,
+    "goals": 6,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 80.58
+  },
+  {
+    "rank": 6,
+    "player": "Ousmane Dembélé",
+    "team_id": 773,
+    "goals": 5,
+    "assists": 2,
+    "shots": null,
+    "minutes_per_goal": 66.0
+  },
+  {
+    "rank": 7,
     "player": "Ismaïla Sarr",
     "team_id": 0,
     "goals": 4,
@@ -45,16 +63,16 @@
     "minutes_per_goal": 73.21
   },
   {
-    "rank": 6,
-    "player": "Ousmane Dembélé",
-    "team_id": 773,
+    "rank": 8,
+    "player": "Julián Quiñones",
+    "team_id": 769,
     "goals": 4,
-    "assists": 2,
+    "assists": 1,
     "shots": null,
-    "minutes_per_goal": 78.0
+    "minutes_per_goal": 82.8
   },
   {
-    "rank": 7,
+    "rank": 9,
     "player": "Vinicius Junior",
     "team_id": 764,
     "goals": 4,
@@ -63,25 +81,25 @@
     "minutes_per_goal": 88.21
   },
   {
-    "rank": 8,
+    "rank": 10,
+    "player": "Mikel Oyarzabal",
+    "team_id": 760,
+    "goals": 4,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 94.21
+  },
+  {
+    "rank": 11,
     "player": "Matheus Cunha",
     "team_id": 764,
     "goals": 3,
     "assists": 0,
     "shots": null,
-    "minutes_per_goal": 108.34
+    "minutes_per_goal": 97.67
   },
   {
-    "rank": 9,
-    "player": "Julián Quiñones",
-    "team_id": 769,
-    "goals": 3,
-    "assists": 1,
-    "shots": null,
-    "minutes_per_goal": 105.75
-  },
-  {
-    "rank": 10,
+    "rank": 12,
     "player": "Cody Gakpo",
     "team_id": 8601,
     "goals": 3,
@@ -90,7 +108,25 @@
     "minutes_per_goal": 93.25
   },
   {
-    "rank": 11,
+    "rank": 13,
+    "player": "Charles De Ketelaere",
+    "team_id": 805,
+    "goals": 3,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 107.0
+  },
+  {
+    "rank": 14,
+    "player": "Romelu Lukaku",
+    "team_id": 805,
+    "goals": 3,
+    "assists": 1,
+    "shots": null,
+    "minutes_per_goal": 38.75
+  },
+  {
+    "rank": 15,
     "player": "Kai Havertz",
     "team_id": 759,
     "goals": 3,
@@ -99,7 +135,16 @@
     "minutes_per_goal": 118.34
   },
   {
-    "rank": 12,
+    "rank": 16,
+    "player": "Raúl Jiménez",
+    "team_id": 769,
+    "goals": 3,
+    "assists": 0,
+    "shots": null,
+    "minutes_per_goal": 106.34
+  },
+  {
+    "rank": 17,
     "player": "Yoane Wissa",
     "team_id": 0,
     "goals": 3,
@@ -108,7 +153,7 @@
     "minutes_per_goal": 120.0
   },
   {
-    "rank": 13,
+    "rank": 18,
     "player": "Deniz Undav",
     "team_id": 759,
     "goals": 3,
@@ -117,66 +162,21 @@
     "minutes_per_goal": 29.81
   },
   {
-    "rank": 14,
+    "rank": 19,
     "player": "Johan Manzambi",
     "team_id": 788,
     "goals": 3,
-    "assists": 1,
+    "assists": 2,
     "shots": null,
-    "minutes_per_goal": 54.75
-  },
-  {
-    "rank": 15,
-    "player": "Elijah Just",
-    "team_id": 783,
-    "goals": 3,
-    "assists": 0,
-    "shots": null,
-    "minutes_per_goal": 88.34
-  },
-  {
-    "rank": 16,
-    "player": "Brian Brobbey",
-    "team_id": 8601,
-    "goals": 3,
-    "assists": 0,
-    "shots": null,
-    "minutes_per_goal": 75.0
-  },
-  {
-    "rank": 17,
-    "player": "Jonathan David",
-    "team_id": 0,
-    "goals": 3,
-    "assists": 0,
-    "shots": null,
-    "minutes_per_goal": 140.34
-  },
-  {
-    "rank": 18,
-    "player": "Ismael Saibari",
-    "team_id": 0,
-    "goals": 3,
-    "assists": 0,
-    "shots": null,
-    "minutes_per_goal": 150.67
-  },
-  {
-    "rank": 19,
-    "player": "Folarin Balogun",
-    "team_id": 0,
-    "goals": 3,
-    "assists": 0,
-    "shots": null,
-    "minutes_per_goal": 114.0
+    "minutes_per_goal": 40.0
   },
   {
     "rank": 20,
-    "player": "Jude Bellingham",
-    "team_id": 770,
-    "goals": 2,
-    "assists": 1,
+    "player": "Cristiano Ronaldo",
+    "team_id": 765,
+    "goals": 3,
+    "assists": 0,
     "shots": null,
-    "minutes_per_goal": 164.67
+    "minutes_per_goal": 147.0
   }
 ]

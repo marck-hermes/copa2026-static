@@ -1,5 +1,17 @@
 [
   {
+    "id": 537387,
+    "date_utc": "2026-07-14T21:00:00Z",
+    "team_a_id": 773,
+    "team_b_id": 760,
+    "score_a": 0,
+    "score_b": 0,
+    "stage": "group",
+    "group": null,
+    "status": "final",
+    "odds": "2.33 / 3.19 / 3.24"
+  },
+  {
     "id": 537386,
     "date_utc": "2026-07-12T03:00:00Z",
     "team_a_id": 762,
@@ -106,30 +118,6 @@
     "group": null,
     "status": "final",
     "odds": "3.0 / 3.08 / 2.52"
-  },
-  {
-    "id": 537377,
-    "date_utc": "2026-07-05T22:00:00Z",
-    "team_a_id": 764,
-    "team_b_id": 8872,
-    "score_a": 1,
-    "score_b": 2,
-    "stage": "group",
-    "group": null,
-    "status": "final",
-    "odds": "1.89 / 3.62 / 4.02"
-  },
-  {
-    "id": 537387,
-    "date_utc": "2026-07-14T21:00:00Z",
-    "team_a_id": 773,
-    "team_b_id": 760,
-    "score_a": null,
-    "score_b": null,
-    "stage": "group",
-    "group": null,
-    "status": "scheduled",
-    "odds": "2.33 / 3.19 / 3.24"
   },
   {
     "id": 537388,
