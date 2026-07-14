@@ -1,7 +1,15 @@
 {
-  "fetched_at": "2026-07-14T20:51:04.120553Z",
+  "fetched_at": "2026-07-14T22:48:50.070458Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
+    {
+      "id": 760,
+      "name": "Spain",
+      "fifa_code": "ESP",
+      "flag_url": "https://crests.football-data.org/760.svg",
+      "group": null,
+      "flag_emoji": "🇪🇸"
+    },
     {
       "id": 773,
       "name": "France",
@@ -17,14 +25,6 @@
       "flag_url": "https://crests.football-data.org/762.png",
       "group": null,
       "flag_emoji": "🇦🇷"
-    },
-    {
-      "id": 760,
-      "name": "Spain",
-      "fifa_code": "ESP",
-      "flag_url": "https://crests.football-data.org/760.svg",
-      "group": null,
-      "flag_emoji": "🇪🇸"
     },
     {
       "id": 770,
@@ -393,8 +393,8 @@
       "date_utc": "2026-07-14T21:00:00Z",
       "team_a_id": 773,
       "team_b_id": 760,
-      "score_a": null,
-      "score_b": null,
+      "score_a": 0,
+      "score_b": 2,
       "stage": "group",
       "group": null,
       "status": "final",
@@ -523,21 +523,34 @@
   ],
   "standings": [
     {
-      "team_id": 773,
+      "team_id": 760,
       "pos": 1,
-      "mp": 6,
+      "mp": 7,
+      "w": 6,
+      "d": 1,
+      "l": 0,
+      "gf": 13,
+      "ga": 1,
+      "gd": 12,
+      "pts": 19,
+      "form": ""
+    },
+    {
+      "team_id": 773,
+      "pos": 2,
+      "mp": 7,
       "w": 6,
       "d": 0,
-      "l": 0,
+      "l": 1,
       "gf": 16,
-      "ga": 2,
-      "gd": 14,
+      "ga": 4,
+      "gd": 12,
       "pts": 18,
       "form": ""
     },
     {
       "team_id": 762,
-      "pos": 2,
+      "pos": 3,
       "mp": 6,
       "w": 6,
       "d": 0,
@@ -546,19 +559,6 @@
       "ga": 6,
       "gd": 11,
       "pts": 18,
-      "form": ""
-    },
-    {
-      "team_id": 760,
-      "pos": 3,
-      "mp": 6,
-      "w": 5,
-      "d": 1,
-      "l": 0,
-      "gf": 11,
-      "ga": 1,
-      "gd": 10,
-      "pts": 16,
       "form": ""
     },
     {
@@ -1164,7 +1164,7 @@
       "goals": 8,
       "assists": 2,
       "shots": null,
-      "minutes_per_goal": 51.71
+      "minutes_per_goal": 60.71
     },
     {
       "rank": 3,
@@ -1200,7 +1200,7 @@
       "goals": 5,
       "assists": 2,
       "shots": null,
-      "minutes_per_goal": 66.0
+      "minutes_per_goal": 78.86
     },
     {
       "rank": 7,
@@ -1236,7 +1236,7 @@
       "goals": 4,
       "assists": 1,
       "shots": null,
-      "minutes_per_goal": 94.21
+      "minutes_per_goal": 112.21
     },
     {
       "rank": 11,
