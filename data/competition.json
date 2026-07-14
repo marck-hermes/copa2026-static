@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-14T19:04:08.528541Z",
+  "fetched_at": "2026-07-14T20:51:04.120553Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -393,8 +393,8 @@
       "date_utc": "2026-07-14T21:00:00Z",
       "team_a_id": 773,
       "team_b_id": 760,
-      "score_a": 0,
-      "score_b": 0,
+      "score_a": null,
+      "score_b": null,
       "stage": "group",
       "group": null,
       "status": "final",
