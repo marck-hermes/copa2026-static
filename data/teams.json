@@ -1,5 +1,13 @@
 [
   {
+    "id": 762,
+    "name": "Argentina",
+    "fifa_code": "ARG",
+    "flag_url": "https://crests.football-data.org/762.png",
+    "group": null,
+    "flag_emoji": "🇦🇷"
+  },
+  {
     "id": 760,
     "name": "Spain",
     "fifa_code": "ESP",
@@ -14,14 +22,6 @@
     "flag_url": "https://crests.football-data.org/773.svg",
     "group": null,
     "flag_emoji": "🇫🇷"
-  },
-  {
-    "id": 762,
-    "name": "Argentina",
-    "fifa_code": "ARG",
-    "flag_url": "https://crests.football-data.org/762.png",
-    "group": null,
-    "flag_emoji": "🇦🇷"
   },
   {
     "id": 770,
