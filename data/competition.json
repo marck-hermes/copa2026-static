@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-18T20:37:48.703982Z",
+  "fetched_at": "2026-07-18T22:40:05.391142Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
     {
@@ -389,6 +389,18 @@
   ],
   "matches": [
     {
+      "id": 537389,
+      "date_utc": "2026-07-18T23:00:00Z",
+      "team_a_id": 773,
+      "team_b_id": 770,
+      "score_a": 3,
+      "score_b": 4,
+      "stage": "group",
+      "group": null,
+      "status": "final",
+      "odds": "1.89 / 3.82 / 3.85"
+    },
+    {
       "id": 537388,
       "date_utc": "2026-07-15T21:00:00Z",
       "team_a_id": 770,
@@ -495,30 +507,6 @@
       "group": null,
       "status": "final",
       "odds": "2.56 / 3.4 / 2.7"
-    },
-    {
-      "id": 537379,
-      "date_utc": "2026-07-06T21:00:00Z",
-      "team_a_id": 765,
-      "team_b_id": 760,
-      "score_a": 0,
-      "score_b": 1,
-      "stage": "group",
-      "group": null,
-      "status": "final",
-      "odds": "4.08 / 3.62 / 1.9"
-    },
-    {
-      "id": 537389,
-      "date_utc": "2026-07-18T23:00:00Z",
-      "team_a_id": 773,
-      "team_b_id": 770,
-      "score_a": null,
-      "score_b": null,
-      "stage": "group",
-      "group": null,
-      "status": "scheduled",
-      "odds": "1.89 / 3.82 / 3.85"
     }
   ],
   "standings": [
@@ -1164,7 +1152,7 @@
       "goals": 8,
       "assists": 2,
       "shots": null,
-      "minutes_per_goal": 60.71
+      "minutes_per_goal": 69.71
     },
     {
       "rank": 3,
