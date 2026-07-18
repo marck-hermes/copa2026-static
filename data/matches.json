@@ -118,5 +118,17 @@
     "group": null,
     "status": "final",
     "odds": "4.08 / 3.62 / 1.9"
+  },
+  {
+    "id": 537389,
+    "date_utc": "2026-07-18T23:00:00Z",
+    "team_a_id": 773,
+    "team_b_id": 770,
+    "score_a": null,
+    "score_b": null,
+    "stage": "group",
+    "group": null,
+    "status": "scheduled",
+    "odds": "1.89 / 3.82 / 3.85"
   }
 ]
