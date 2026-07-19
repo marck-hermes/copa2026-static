@@ -1,15 +1,7 @@
 {
-  "fetched_at": "2026-07-19T20:38:19.704789Z",
+  "fetched_at": "2026-07-19T22:42:08.765231Z",
   "source_url": "https://native-stats.org/competition/WC/",
   "teams": [
-    {
-      "id": 762,
-      "name": "Argentina",
-      "fifa_code": "ARG",
-      "flag_url": "https://crests.football-data.org/762.png",
-      "group": null,
-      "flag_emoji": "🇦🇷"
-    },
     {
       "id": 760,
       "name": "Spain",
@@ -17,6 +9,14 @@
       "flag_url": "https://crests.football-data.org/760.svg",
       "group": null,
       "flag_emoji": "🇪🇸"
+    },
+    {
+      "id": 762,
+      "name": "Argentina",
+      "fifa_code": "ARG",
+      "flag_url": "https://crests.football-data.org/762.png",
+      "group": null,
+      "flag_emoji": "🇦🇷"
     },
     {
       "id": 770,
@@ -393,7 +393,7 @@
       "date_utc": "2026-07-19T21:00:00Z",
       "team_a_id": 760,
       "team_b_id": 762,
-      "score_a": 0,
+      "score_a": 1,
       "score_b": 0,
       "stage": "group",
       "group": null,
@@ -511,29 +511,29 @@
   ],
   "standings": [
     {
-      "team_id": 762,
+      "team_id": 760,
       "pos": 1,
-      "mp": 7,
+      "mp": 8,
       "w": 7,
-      "d": 0,
+      "d": 1,
       "l": 0,
-      "gf": 19,
-      "ga": 7,
-      "gd": 12,
-      "pts": 21,
+      "gf": 14,
+      "ga": 1,
+      "gd": 13,
+      "pts": 22,
       "form": ""
     },
     {
-      "team_id": 760,
+      "team_id": 762,
       "pos": 2,
-      "mp": 7,
-      "w": 6,
-      "d": 1,
-      "l": 0,
-      "gf": 13,
-      "ga": 1,
-      "gd": 12,
-      "pts": 19,
+      "mp": 8,
+      "w": 7,
+      "d": 0,
+      "l": 1,
+      "gf": 19,
+      "ga": 8,
+      "gd": 11,
+      "pts": 21,
       "form": ""
     },
     {
@@ -1143,7 +1143,7 @@
       "goals": 8,
       "assists": 2,
       "shots": null,
-      "minutes_per_goal": 62.0
+      "minutes_per_goal": 71.0
     },
     {
       "rank": 2,
@@ -1224,7 +1224,7 @@
       "goals": 4,
       "assists": 1,
       "shots": null,
-      "minutes_per_goal": 112.21
+      "minutes_per_goal": 130.2
     },
     {
       "rank": 11,
