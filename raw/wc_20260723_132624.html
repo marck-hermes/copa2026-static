@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html data-theme="dim" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="PCt3AwAdPxhhDCcBEy4nPFEBMBsgHWZkMoEgbOe564EuJvUh6nWOaY_5">
+    <title>native-stats. pure, fast and accessible soccer statistics.</title>
+    <link rel="icon" href="/images/favicon-5873d70a0ad389fd764bebf3200ae77e.png?vsn=d" type="image/png">
+    <link rel="stylesheet" type="text/css" href="/images/pikaday-bd8097d51567718227a2ab36373ba20b.css?vsn=d">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link phx-track-static rel="stylesheet" href="/assets/app.css">
+    <script defer phx-track-static type="text/javascript" src="/assets/app-7f22ed7499cf3ba3bd15f121393777e5.js?vsn=d">
+    </script>
+    <script defer data-domain="native-stats.org" src="https://plausible.io/js/script.js">
+    </script>
+  </head>
+  <body class="">
+    <nav class="bg-black w-full fixed z-50">
+      <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="flex items-center px-2 lg:px-0">
+            <div class="flex-shrink-0">
+              <a href="/">
+                <img class="block h-10 w-auto" src="/images/logo-3a5e17bbefa0947d8130948de2d3b2ae.png?vsn=d" alt="native-stats">
+              </a>
+            </div>
+            <div class="hidden lg:ml-2 lg:block">
+              <div class="flex space-x-4">
+                <span style="font-family: 'Montserrat', sans-serif;" class="py-2 font-bold inline-block text-base whitespace-nowrap text-white">
+                  pure. fast. accessible.
+                </span>
+              </div>
+            </div>
+            <div class="hidden lg:ml-10 lg:block">
+              <div class="relative inline-block text-left">
+                <div class="flex space-x-4">
+                  <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white" phx-click="[[&quot;toggle&quot;,{&quot;display&quot;:&quot;block&quot;,&quot;to&quot;:&quot;#halloechen&quot;}]]" phx-click-away="[[&quot;toggle&quot;,{&quot;display&quot;:&quot;hidden&quot;,&quot;to&quot;:&quot;#halloechen&quot;}]]">
+                    Menu
+                  </button>
+                </div>
+                <!--
+                Dropdown menu, show/hide based on menu state.
+
+                Entering: "transition ease-out duration-100"
+                  From: "transform opacity-0 scale-95"
+                  To: "transform opacity-100 scale-100"
+                Leaving: "transition ease-in duration-75"
+                  From: "transform opacity-100 scale-100"
+                  To: "transform opacity-0 scale-95"
+              -->
+                <div id="halloechen" class="absolute hidden left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-500 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                  <div class="py-1" role="none">
+                    <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                    <a href="/betting" class="block px-4 py-2 text-sm text-gray-800 bg-gray-500 hover:bg-purple-800 hover:text-gray-200" role="menuitem" tabindex="-1" id="menu-item-0">
+                      Matches w/ advanced form data
+                    </a>
+                    <a href="/alltime-streaks" class="block px-4 py-2 text-sm text-gray-800 bg-gray-500 hover:bg-purple-800 hover:text-gray-200" role="menuitem" tabindex="-1" id="menu-item-2">
+                      Alltime Streaks
+                    </a>
+                    <a href="/blog" class="block px-4 py-2 text-sm text-gray-800 bg-gray-500 hover:bg-purple-800 hover:text-gray-200" role="menuitem" tabindex="-1" id="menu-item-3">
+                      Blog
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden lg:ml-10 lg:block">
+              <div class="flex items-center">
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/PL&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/770.svg" alt="PL">
+                  </div>
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/PD&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/760.svg" alt="PD">
+                  </div>
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/SA&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/784.svg" alt="SA">
+                  </div>
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/BL1&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/759.svg" alt="BL1">
+                  </div>
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/FL1&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/773.svg" alt="FL1">
+                  </div>
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/DED&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/8601.svg" alt="DED">
+                  </div>
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/PPL&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/765.svg" alt="PPL">
+                  </div>
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/ASL&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/ar.svg" alt="ASL">
+                  </div>
+
+                  <div class="px-1 hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/competition/BSA&quot;}]]">
+                    <img class="w-5 crest-img" src="https://crests.football-data.org/764.svg" alt="BSA">
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="relative z-0 flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
+            <label for="search" class="sr-only">Search</label>
+            <div class="relative">
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <input id="search" name="keyword" phx-debounce="100" phx-keyup="find" phx-click="[[&quot;toggle&quot;,{&quot;display&quot;:&quot;block&quot;,&quot;to&quot;:&quot;#search_options&quot;}]]" phx-click-away="[[&quot;toggle&quot;,{&quot;display&quot;:&quot;hidden&quot;,&quot;to&quot;:&quot;#search_options&quot;}]]" class="block w-full rounded-md border border-transparent bg-gray-700 py-2 pl-10 pr-3 text-sm placeholder-gray-400 focus:border-white focus:bg-white focus:text-gray-900 focus:placeholder-gray-500 focus:outline-none focus:ring-white sm:text-sm" placeholder="Search" type="search" autocomplete="off">
+            </div>
+          </div>
+          <div class="flex lg:hidden">
+            <!-- Mobile menu button -->
+            <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" phx-click="[[&quot;toggle&quot;,{&quot;display&quot;:&quot;block&quot;,&quot;to&quot;:&quot;#mobile-menu&quot;}]]" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+              </svg>
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:ml-4 lg:block">
+            <div class="flex items-center space-x-1">
+              <button type="button" class="flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/about&quot;}]]" aria-controls="mobile-menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+                </svg>
+              </button>
+              <!-- Profile dropdown -->
+              <div class="relative ml-4 flex-shrink-0">
+                <div>
+
+                    <button style="background-color: #40c54a" class="cursor-pointer py-2 px-4 ml-2 block text-white font-semibold w-full text-center rounded" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/users/log_in&quot;}]]">
+                      Login
+                    </button>
+
+                </div>
+                <!--
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                <div id="user_menu" class="absolute hidden right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                  <a href="/users/settings" id="user-menu-item-1" class="block px-4 py-2 text-sm text-gray-700 hover:cursor-pointer hover:bg-indigo-400 hover:text-white" role="menuitem" tabindex="-1">
+                    Settings
+                  </a>
+                  <a href="/users/log_out" data-method="delete" data-csrf="PCt3AwAdPxhhDCcBEy4nPFEBMBsgHWZkMoEgbOe564EuJvUh6nWOaY_5" data-to="/users/log_out" id="user-menu-item-2" class="block px-4 py-2 text-sm text-gray-700 hover:cursor-pointer hover:bg-indigo-400 hover:text-white" role="menuitem" tabindex="-1">
+                    Log out
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pt-2 pb-3 hover:">
+          <!-- <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a> -->
+        </div>
+        <div class="border-t border-gray-700 pt-4 pb-3">
+
+            <div class="mt-3 space-y-1 px-2">
+              <a href="/users/log_in" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">
+                Sign in
+              </a>
+            </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <main class="h-screen pt-16 mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+      <div id="phx-GMTuIojsNW0u57YC" data-phx-main data-phx-session="SFMyNTY.g2gDaAJhBnQAAAAIdwJpZG0AAAAUcGh4LUdNVHVJb2pzTlcwdTU3WUN3B3Nlc3Npb250AAAAAHcEdmlld3clRWxpeGlyLk5hdGl2ZVN0YXRzV2ViLkNvbXBldGl0aW9uTGl2ZXcKcGFyZW50X3BpZHcDbmlsdwZyb3V0ZXJ3HEVsaXhpci5OYXRpdmVTdGF0c1dlYi5Sb3V0ZXJ3CHJvb3RfcGlkdwNuaWx3CXJvb3Rfdmlld3clRWxpeGlyLk5hdGl2ZVN0YXRzV2ViLkNvbXBldGl0aW9uTGl2ZXcRbGl2ZV9zZXNzaW9uX25hbWV3DHNlc3Npb25fbmFtZW4GANflJ4-fAWIAAVGA.qn6xTWdTyxL8CKTQOiVSwDk6bfNFQJ3lCC-UXSG0sr0" data-phx-static="SFMyNTY.g2gDaAJhBnQAAAADdwJpZG0AAAAUcGh4LUdNVHVJb2pzTlcwdTU3WUN3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdqbgYA1-Unj58BYgABUYA.AtpNymFpJtofYp_XJyMhIF2ZPwfxvwPGdeVtcd8-taA"><div class="flex fixed top-16 left-2 w-96 z-50">
+  <ul class="absolute hidden z-10 max-h-72 sm:max-w-xs w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" id="search_options" role="listbox">
+
+
+
+  </ul>
+</div>
+
+<div id="toast-group" class="fixed z-50 max-h-screen w-full p-4 md:max-w-[420px] pointer-events-none grid origin-center items-start top-0 right-0 flex-col sm:bottom-auto">
+  <div class="contents" id="toast-group-stream" phx-update="stream">
+    
+  </div>
+
+  
+
+<div id="client-error" role="alert" phx-hook="LiveToast" data-duration="6000" data-corner="top_right" class="bg-white group/toast z-100 pointer-events-auto relative w-full items-center justify-between origin-center overflow-hidden rounded-lg p-4 shadow-lg border col-start-1 col-end-1 row-start-1 row-end-2 [@media(scripting:enabled)]:opacity-0 [@media(scripting:enabled){[data-phx-main]_&amp;}]:opacity-100 hidden !text-red-700 !bg-red-100 border-red-200" hidden data-component="flash" phx-connected="[[&quot;hide&quot;,{&quot;time&quot;:200,&quot;to&quot;:&quot;#client-error&quot;,&quot;transition&quot;:[[&quot;transition-all&quot;,&quot;transform&quot;,&quot;ease-in&quot;,&quot;duration-200&quot;],[&quot;opacity-100&quot;,&quot;translate-y-0&quot;,&quot;sm:scale-100&quot;],[&quot;opacity-0&quot;,&quot;translate-y-4&quot;,&quot;sm:translate-y-0&quot;,&quot;sm:scale-95&quot;]]}]]" phx-disconnected="[[&quot;show&quot;,{&quot;display&quot;:&quot;flex&quot;,&quot;to&quot;:&quot;.phx-client-error #client-error&quot;,&quot;transition&quot;:[[&quot;transition-all&quot;,&quot;transform&quot;,&quot;ease-out&quot;,&quot;duration-300&quot;],[&quot;opacity-0&quot;,&quot;translate-y-4&quot;,&quot;sm:translate-y-0&quot;,&quot;sm:scale-95&quot;],[&quot;opacity-100&quot;,&quot;translate-y-0&quot;,&quot;sm:scale-100&quot;]]}]]" phx-update="ignore">
+  
+    <div class="grow flex flex-col items-start justify-center">
+      <p data-part="title" class=" flex items-center text-sm font-semibold leading-6">
+        
+        We can&#39;t find the internet
+      </p>
+      <p class="text-sm leading-5">
+        
+  Attempting to reconnect
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="inline-block ml-1 h-3 w-3 animate-spin">
+  <path fill-rule="evenodd" d="M4.755 10.059a7.5 7.5 0 0 1 12.548-3.364l1.903 1.903h-3.183a.75.75 0 1 0 0 1.5h4.992a.75.75 0 0 0 .75-.75V4.356a.75.75 0 0 0-1.5 0v3.18l-1.9-1.9A9 9 0 0 0 3.306 9.67a.75.75 0 1 0 1.45.388Zm15.408 3.352a.75.75 0 0 0-.919.53 7.5 7.5 0 0 1-12.548 3.364l-1.902-1.903h3.183a.75.75 0 0 0 0-1.5H2.984a.75.75 0 0 0-.75.75v4.992a.75.75 0 0 0 1.5 0v-3.18l1.9 1.9a9 9 0 0 0 15.059-4.035.75.75 0 0 0-.53-.918Z" clip-rule="evenodd"></path>
+</svg>
+
+      </p>
+    </div>
+
+    
+  
+  <button type="button" class="group-has-[[data-part=&#39;title&#39;]]/toast:absolute right-[5px] top-[5px] rounded-md p-[5px] text-black/50 transition-opacity hover:text-black focus:opacity-100 focus:outline-none focus:ring-1 group group-hover:opacity-100" aria-label="close" phx-click="clear" phx-value-id="client-error">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-[14px] w-[14px] opacity-40 group-hover:opacity-70">
+  <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path>
+</svg>
+  </button>
+</div>
+
+<div id="server-error" role="alert" phx-hook="LiveToast" data-duration="6000" data-corner="top_right" class="bg-white group/toast z-100 pointer-events-auto relative w-full items-center justify-between origin-center overflow-hidden rounded-lg p-4 shadow-lg border col-start-1 col-end-1 row-start-1 row-end-2 [@media(scripting:enabled)]:opacity-0 [@media(scripting:enabled){[data-phx-main]_&amp;}]:opacity-100 hidden !text-red-700 !bg-red-100 border-red-200" hidden data-component="flash" phx-connected="[[&quot;hide&quot;,{&quot;time&quot;:200,&quot;to&quot;:&quot;#server-error&quot;,&quot;transition&quot;:[[&quot;transition-all&quot;,&quot;transform&quot;,&quot;ease-in&quot;,&quot;duration-200&quot;],[&quot;opacity-100&quot;,&quot;translate-y-0&quot;,&quot;sm:scale-100&quot;],[&quot;opacity-0&quot;,&quot;translate-y-4&quot;,&quot;sm:translate-y-0&quot;,&quot;sm:scale-95&quot;]]}]]" phx-disconnected="[[&quot;show&quot;,{&quot;display&quot;:&quot;flex&quot;,&quot;to&quot;:&quot;.phx-server-error #server-error&quot;,&quot;transition&quot;:[[&quot;transition-all&quot;,&quot;transform&quot;,&quot;ease-out&quot;,&quot;duration-300&quot;],[&quot;opacity-0&quot;,&quot;translate-y-4&quot;,&quot;sm:translate-y-0&quot;,&quot;sm:scale-95&quot;],[&quot;opacity-100&quot;,&quot;translate-y-0&quot;,&quot;sm:scale-100&quot;]]}]]" phx-update="ignore">
+  
+    <div class="grow flex flex-col items-start justify-center">
+      <p data-part="title" class=" flex items-center text-sm font-semibold leading-6">
+        
+        Something went wrong!
+      </p>
+      <p class="text-sm leading-5">
+        
+  Hang in there while we get back on track
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="inline-block ml-1 h-3 w-3 animate-spin">
+  <path fill-rule="evenodd" d="M4.755 10.059a7.5 7.5 0 0 1 12.548-3.364l1.903 1.903h-3.183a.75.75 0 1 0 0 1.5h4.992a.75.75 0 0 0 .75-.75V4.356a.75.75 0 0 0-1.5 0v3.18l-1.9-1.9A9 9 0 0 0 3.306 9.67a.75.75 0 1 0 1.45.388Zm15.408 3.352a.75.75 0 0 0-.919.53 7.5 7.5 0 0 1-12.548 3.364l-1.902-1.903h3.183a.75.75 0 0 0 0-1.5H2.984a.75.75 0 0 0-.75.75v4.992a.75.75 0 0 0 1.5 0v-3.18l1.9 1.9a9 9 0 0 0 15.059-4.035.75.75 0 0 0-.53-.918Z" clip-rule="evenodd"></path>
+</svg>
+
+      </p>
+    </div>
+
+    
+  
+  <button type="button" class="group-has-[[data-part=&#39;title&#39;]]/toast:absolute right-[5px] top-[5px] rounded-md p-[5px] text-black/50 transition-opacity hover:text-black focus:opacity-100 focus:outline-none focus:ring-1 group group-hover:opacity-100" aria-label="close" phx-click="clear" phx-value-id="server-error">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-[14px] w-[14px] opacity-40 group-hover:opacity-70">
+  <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path>
+</svg>
+  </button>
+</div>
+</div>
+
+
+<div class="flex">
+  <div class="mb-2 mt-2 flex-shrink-0 sm:mb-0 sm:mr-4 bg-white">
+    <img class="max-h-12 w-12 inline-block m-1" src="https://crests.football-data.org/qatar.png">
+  </div>
+  <div class="ml-2">
+    <h4 class="text-lg font-bold">FIFA World Cup</h4>
+    <p class="text-xs">Season 2026/27</p>
+  </div>
+  <div class="grow text-right ml-4">
+    <form phx-change="set_season">
+      <select class="mt-2 rounded-md border-0 py-1.5 pl-3 pr-10 sm:text-sm sm:leading-6" id="form_season" name="form[season]"><option selected value="2398">2026/26</option></select>
+    </form>
+  </div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-2">
+  <div>
+    <span class="font-semibold text-xs">Recent matches:</span>
+    <div class="overflow-x-auto">
+      <table class="table table-xs">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Label</th>
+      <th>Score</th>
+      <th>Odds</th>
+    </tr>
+  </thead>
+  <tbody id="last_matches" phx-update="stream">
+    <tr id="last-379440">
+      <th>2026/07/19, 21h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/760&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/760.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Spain
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Spain
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ESP</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/762&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/762.png">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Argentina
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Argentina
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ARG</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537390&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      1:0
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        2.31 / 2.96 / 3.55
+      </td>
+    </tr><tr id="last-379439">
+      <th>2026/07/18, 23h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/773&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/773.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      France
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      France
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">FRA</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/770&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/770.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      England
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      England
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ENG</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537389&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      4:6
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        1.89 / 3.82 / 3.85
+      </td>
+    </tr><tr id="last-379433">
+      <th>2026/07/15, 21h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/770&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/770.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      England
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      England
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ENG</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/762&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/762.png">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Argentina
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Argentina
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ARG</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537388&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      1:2
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        2.64 / 2.96 / 3.02
+      </td>
+    </tr><tr id="last-379432">
+      <th>2026/07/14, 21h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/773&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/773.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      France
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      France
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">FRA</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/760&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/760.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Spain
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Spain
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ESP</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537387&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      0:2
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        2.33 / 3.19 / 3.24
+      </td>
+    </tr><tr id="last-379431">
+      <th>2026/07/12, 03h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/762&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/762.png">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Argentina
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Argentina
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ARG</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/788&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/788.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Switzerland
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Switzerland
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">SUI</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537386&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      3:1
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        1.73 / 3.49 / 5.34
+      </td>
+    </tr><tr id="last-379430">
+      <th>2026/07/11, 23h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/8872&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/813.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Norway
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Norway
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">NOR</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/770&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/770.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      England
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      England
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ENG</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537385&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      1:2
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        3.81 / 3.49 / 1.96
+      </td>
+    </tr><tr id="last-379429">
+      <th>2026/07/10, 21h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/760&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/760.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Spain
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Spain
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ESP</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/805&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/805.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Belgium
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Belgium
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">BEL</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537384&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      2:1
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        1.63 / 3.92 / 5.49
+      </td>
+    </tr><tr id="last-379428">
+      <th>2026/07/09, 22h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/773&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/773.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      France
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      France
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">FRA</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/815&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/morocco.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Morocco
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Morocco
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">MAR</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537383&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      2:0
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        1.6 / 3.96 / 6.22
+      </td>
+    </tr><tr id="last-379427">
+      <th>2026/07/07, 22h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/788&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/788.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Switzerland
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Switzerland
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">SUI</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/818&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/818.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Colombia
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Colombia
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">COL</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537382&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      4:3
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        3.49 / 3.16 / 2.25
+      </td>
+    </tr><tr id="last-379426">
+      <th>2026/07/07, 18h00</th>
+      <td>
+        <div class="flex">
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/762&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/762.png">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Argentina
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Argentina
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">ARG</span>
+  </span>
+</div></div>
+          <div class="mx-2">-</div>
+          <div style="width: 120px"><div class="content hover:cursor-pointer flex max-w-2 truncate">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/825&quot;}]]">
+    <img class="max-h-5 w-5 crest-img inline-block" src="https://crests.football-data.org/825.svg">
+    <span class="hidden text-gray-200 align-middle md:inline-block">
+      Egypt
+    </span>
+    <span class="hidden text-gray-200 align-middle sm:inline-block max-w-4 md:hidden">
+      Egypt
+    </span>
+    <span class="inline-block sm:hidden text-gray-200 ">EGY</span>
+  </span>
+</div></div>
+        </div>
+      </td>
+      <td class="whitespace-nowrap"><span class="hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/match/537381&quot;}]]">
+  <div>
+    <div class="inline-flex items-baseline rounded-full px-2 py-0.5 text-xs font-normal bg-purple-900 text-white md:mt-2 lg:mt-0">
+      3:2
+    </div>
+  </div>
+  
+  
+</span></td>
+      <td class="whitespace-nowrap">
+        1.37 / 4.77 / 9.31
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="5">
+        <div class="join pr-2">
+          
+          <button class="join-item btn btn-xs">Page 1</button>
+          <button phx-click="set_page" phx-value-page="next" phx-value-table="last_matches" class="join-item btn btn-xs">
+            »
+          </button>
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+</table>
+    </div>
+  </div>
+  <div>
+    <span class="font-semibold text-xs">Next matches:</span>
+    <div class="overflow-x-auto">
+      <table class="table table-xs">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Label</th>
+      <th>Score</th>
+      <th>Odds</th>
+    </tr>
+  </thead>
+  <tbody id="next_matches" phx-update="stream">
+    
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="5">
+        <div class="join pr-2">
+          
+          <button class="join-item btn btn-xs">Page 1</button>
+          
+        </div>
+      </th>
+    </tr>
+  </tfoot>
+</table>
+    </div>
+  </div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-2 mb-10">
+  <div class="mb-6">
+    <h4>Standings:</h4>
+    <div>
+  <table class="table table-xs">
+    <thead>
+      <tr>
+        <th>Pos</th>
+        <th>Team</th>
+        <th>Matches</th>
+        <th>Points</th>
+        <th>
+          <div class="tooltip tooltip-top" data-tip="Score diff.">
+            <span>+/-</span>
+          </div>
+        </th>
+        <th>Goals</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>1.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/760&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/760.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Spain
+    </span>
+    <span class="inline-block sm:hidden">ESP</span>
+  </span>
+</div>
+          </td>
+          <td>8</td>
+          <td>22</td>
+          <td>13</td>
+          <td>
+            14:1
+          </td>
+        </tr>
+      
+        <tr>
+          <td>2.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/762&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/762.png">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Argentina
+    </span>
+    <span class="inline-block sm:hidden">ARG</span>
+  </span>
+</div>
+          </td>
+          <td>8</td>
+          <td>21</td>
+          <td>11</td>
+          <td>
+            19:8
+          </td>
+        </tr>
+      
+        <tr>
+          <td>3.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/770&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/770.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      England
+    </span>
+    <span class="inline-block sm:hidden">ENG</span>
+  </span>
+</div>
+          </td>
+          <td>8</td>
+          <td>19</td>
+          <td>8</td>
+          <td>
+            20:12
+          </td>
+        </tr>
+      
+        <tr>
+          <td>4.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/773&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/773.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      France
+    </span>
+    <span class="inline-block sm:hidden">FRA</span>
+  </span>
+</div>
+          </td>
+          <td>8</td>
+          <td>18</td>
+          <td>10</td>
+          <td>
+            20:10
+          </td>
+        </tr>
+      
+        <tr>
+          <td>5.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/788&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/788.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Switzerland
+    </span>
+    <span class="inline-block sm:hidden">SUI</span>
+  </span>
+</div>
+          </td>
+          <td>6</td>
+          <td>13</td>
+          <td>5</td>
+          <td>
+            14:9
+          </td>
+        </tr>
+      
+        <tr>
+          <td>6.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/815&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/morocco.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Morocco
+    </span>
+    <span class="inline-block sm:hidden">MAR</span>
+  </span>
+</div>
+          </td>
+          <td>6</td>
+          <td>13</td>
+          <td>5</td>
+          <td>
+            13:8
+          </td>
+        </tr>
+      
+        <tr>
+          <td>7.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/769&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/769.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Mexico
+    </span>
+    <span class="inline-block sm:hidden">MEX</span>
+  </span>
+</div>
+          </td>
+          <td>5</td>
+          <td>12</td>
+          <td>7</td>
+          <td>
+            10:3
+          </td>
+        </tr>
+      
+        <tr>
+          <td>8.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/8872&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/813.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Norway
+    </span>
+    <span class="inline-block sm:hidden">NOR</span>
+  </span>
+</div>
+          </td>
+          <td>6</td>
+          <td>12</td>
+          <td>2</td>
+          <td>
+            13:11
+          </td>
+        </tr>
+      
+        <tr>
+          <td>9.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/805&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/805.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Belgium
+    </span>
+    <span class="inline-block sm:hidden">BEL</span>
+  </span>
+</div>
+          </td>
+          <td>6</td>
+          <td>11</td>
+          <td>7</td>
+          <td>
+            14:7
+          </td>
+        </tr>
+      
+        <tr>
+          <td>10.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/764&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/764.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Brazil
+    </span>
+    <span class="inline-block sm:hidden">BRA</span>
+  </span>
+</div>
+          </td>
+          <td>5</td>
+          <td>10</td>
+          <td>6</td>
+          <td>
+            10:4
+          </td>
+        </tr>
+      
+        <tr>
+          <td>11.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/818&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/818.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Colombia
+    </span>
+    <span class="inline-block sm:hidden">COL</span>
+  </span>
+</div>
+          </td>
+          <td>5</td>
+          <td>10</td>
+          <td>3</td>
+          <td>
+            8:5
+          </td>
+        </tr>
+      
+        <tr>
+          <td>12.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/771&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/usa.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      USA
+    </span>
+    <span class="inline-block sm:hidden">USA</span>
+  </span>
+</div>
+          </td>
+          <td>5</td>
+          <td>9</td>
+          <td>3</td>
+          <td>
+            11:8
+          </td>
+        </tr>
+      
+        <tr>
+          <td>13.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/765&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/765.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Portugal
+    </span>
+    <span class="inline-block sm:hidden">POR</span>
+  </span>
+</div>
+          </td>
+          <td>5</td>
+          <td>8</td>
+          <td>5</td>
+          <td>
+            8:3
+          </td>
+        </tr>
+      
+        <tr>
+          <td>14.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/825&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/825.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Egypt
+    </span>
+    <span class="inline-block sm:hidden">EGY</span>
+  </span>
+</div>
+          </td>
+          <td>5</td>
+          <td>8</td>
+          <td>3</td>
+          <td>
+            12:9
+          </td>
+        </tr>
+      
+        <tr>
+          <td>15.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/8601&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/8601.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Netherlands
+    </span>
+    <span class="inline-block sm:hidden">NED</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>7</td>
+          <td>5</td>
+          <td>
+            13:8
+          </td>
+        </tr>
+      
+        <tr>
+          <td>16.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/828&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/canada.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Canada
+    </span>
+    <span class="inline-block sm:hidden">CAN</span>
+  </span>
+</div>
+          </td>
+          <td>5</td>
+          <td>7</td>
+          <td>3</td>
+          <td>
+            9:6
+          </td>
+        </tr>
+      
+        <tr>
+          <td>17.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/761&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/761.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Paraguay
+    </span>
+    <span class="inline-block sm:hidden">PAR</span>
+  </span>
+</div>
+          </td>
+          <td>5</td>
+          <td>7</td>
+          <td>-2</td>
+          <td>
+            7:9
+          </td>
+        </tr>
+      
+        <tr>
+          <td>18.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/759&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/759.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Germany
+    </span>
+    <span class="inline-block sm:hidden">GER</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>
+            14:9
+          </td>
+        </tr>
+      
+        <tr>
+          <td>19.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/1935&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/787.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Ivory Coast
+    </span>
+    <span class="inline-block sm:hidden">CIV</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>6</td>
+          <td>1</td>
+          <td>
+            5:4
+          </td>
+        </tr>
+      
+        <tr>
+          <td>20.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/799&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/799.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Croatia
+    </span>
+    <span class="inline-block sm:hidden">CRO</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>6</td>
+          <td>-1</td>
+          <td>
+            6:7
+          </td>
+        </tr>
+      
+        <tr>
+          <td>21.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/766&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/766.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Japan
+    </span>
+    <span class="inline-block sm:hidden">JPN</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>5</td>
+          <td>3</td>
+          <td>
+            8:5
+          </td>
+        </tr>
+      
+        <tr>
+          <td>22.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/1934&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/congo_dr.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Congo DR
+    </span>
+    <span class="inline-block sm:hidden">COD</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>0</td>
+          <td>
+            5:5
+          </td>
+        </tr>
+      
+        <tr>
+          <td>23.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/763&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/ghana.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Ghana
+    </span>
+    <span class="inline-block sm:hidden">GHA</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>-1</td>
+          <td>
+            2:3
+          </td>
+        </tr>
+      
+        <tr>
+          <td>24.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/779&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/779.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Australia
+    </span>
+    <span class="inline-block sm:hidden">AUS</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>-2</td>
+          <td>
+            5:7
+          </td>
+        </tr>
+      
+        <tr>
+          <td>25.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/791&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/791.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Ecuador
+    </span>
+    <span class="inline-block sm:hidden">ECU</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>-2</td>
+          <td>
+            2:4
+          </td>
+        </tr>
+      
+        <tr>
+          <td>26.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/774&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/9396.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      South Africa
+    </span>
+    <span class="inline-block sm:hidden">RSA</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>-2</td>
+          <td>
+            2:4
+          </td>
+        </tr>
+      
+        <tr>
+          <td>27.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/792&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/792.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Sweden
+    </span>
+    <span class="inline-block sm:hidden">SWE</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>-3</td>
+          <td>
+            7:10
+          </td>
+        </tr>
+      
+        <tr>
+          <td>28.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/816&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/816.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Austria
+    </span>
+    <span class="inline-block sm:hidden">AUT</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>-3</td>
+          <td>
+            6:9
+          </td>
+        </tr>
+      
+        <tr>
+          <td>29.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/1060&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/bosnia.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Bosnia-H.
+    </span>
+    <span class="inline-block sm:hidden">BIH</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>-3</td>
+          <td>
+            5:8
+          </td>
+        </tr>
+      
+        <tr>
+          <td>30.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/778&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/algeria.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Algeria
+    </span>
+    <span class="inline-block sm:hidden">ALG</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>4</td>
+          <td>-4</td>
+          <td>
+            5:9
+          </td>
+        </tr>
+      
+        <tr>
+          <td>31.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/804&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/senegal.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Senegal
+    </span>
+    <span class="inline-block sm:hidden">SEN</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>3</td>
+          <td>1</td>
+          <td>
+            10:9
+          </td>
+        </tr>
+      
+        <tr>
+          <td>32.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/840&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/iran.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Iran
+    </span>
+    <span class="inline-block sm:hidden">IRN</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>3</td>
+          <td>0</td>
+          <td>
+            3:3
+          </td>
+        </tr>
+      
+        <tr>
+          <td>33.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/1930&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/cape_verde.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Cape Verde
+    </span>
+    <span class="inline-block sm:hidden">CPV</span>
+  </span>
+</div>
+          </td>
+          <td>4</td>
+          <td>3</td>
+          <td>-1</td>
+          <td>
+            4:5
+          </td>
+        </tr>
+      
+        <tr>
+          <td>34.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/772&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/772.png">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Korea Republic
+    </span>
+    <span class="inline-block sm:hidden">KOR</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>3</td>
+          <td>-1</td>
+          <td>
+            2:3
+          </td>
+        </tr>
+      
+        <tr>
+          <td>35.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/803&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/803.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Turkey
+    </span>
+    <span class="inline-block sm:hidden">TUR</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>3</td>
+          <td>-2</td>
+          <td>
+            3:5
+          </td>
+        </tr>
+      
+        <tr>
+          <td>36.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/8873&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/814.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Scotland
+    </span>
+    <span class="inline-block sm:hidden">SCO</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>3</td>
+          <td>-3</td>
+          <td>
+            1:4
+          </td>
+        </tr>
+      
+        <tr>
+          <td>37.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/758&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/758.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Uruguay
+    </span>
+    <span class="inline-block sm:hidden">URY</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>2</td>
+          <td>-1</td>
+          <td>
+            3:4
+          </td>
+        </tr>
+      
+        <tr>
+          <td>38.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/801&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/saudi_arabia.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Saudi Arabia
+    </span>
+    <span class="inline-block sm:hidden">KSA</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>2</td>
+          <td>-4</td>
+          <td>
+            1:5
+          </td>
+        </tr>
+      
+        <tr>
+          <td>39.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/798&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/798.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Czechia
+    </span>
+    <span class="inline-block sm:hidden">CZE</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>1</td>
+          <td>-4</td>
+          <td>
+            2:6
+          </td>
+        </tr>
+      
+        <tr>
+          <td>40.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/783&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/783.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      New Zealand
+    </span>
+    <span class="inline-block sm:hidden">NZL</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>1</td>
+          <td>-6</td>
+          <td>
+            4:10
+          </td>
+        </tr>
+      
+        <tr>
+          <td>41.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/8030&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/8030.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Qatar
+    </span>
+    <span class="inline-block sm:hidden">QAT</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>1</td>
+          <td>-8</td>
+          <td>
+            2:10
+          </td>
+        </tr>
+      
+        <tr>
+          <td>42.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/9460&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/curacao.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Curaçao
+    </span>
+    <span class="inline-block sm:hidden">CUW</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>1</td>
+          <td>-8</td>
+          <td>
+            1:9
+          </td>
+        </tr>
+      
+        <tr>
+          <td>43.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/1836&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/panama.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Panama
+    </span>
+    <span class="inline-block sm:hidden">PAN</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>0</td>
+          <td>-4</td>
+          <td>
+            0:4
+          </td>
+        </tr>
+      
+        <tr>
+          <td>44.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/8049&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/8049.png">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Jordan
+    </span>
+    <span class="inline-block sm:hidden">JOR</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>0</td>
+          <td>-5</td>
+          <td>
+            3:8
+          </td>
+        </tr>
+      
+        <tr>
+          <td>45.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/836&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/haiti.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Haiti
+    </span>
+    <span class="inline-block sm:hidden">HAI</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>0</td>
+          <td>-6</td>
+          <td>
+            2:8
+          </td>
+        </tr>
+      
+        <tr>
+          <td>46.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/8070&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/8070.png">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Uzbekistan
+    </span>
+    <span class="inline-block sm:hidden">UZB</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>0</td>
+          <td>-9</td>
+          <td>
+            2:11
+          </td>
+        </tr>
+      
+        <tr>
+          <td>47.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/802&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/tunisia.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Tunisia
+    </span>
+    <span class="inline-block sm:hidden">TUN</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>0</td>
+          <td>-10</td>
+          <td>
+            2:12
+          </td>
+        </tr>
+      
+        <tr>
+          <td>48.</td>
+          <td>
+            <div class="content hover:cursor-pointer flex">
+  <span phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/team/8062&quot;}]]">
+    <img class="max-h-4 w-5 crest-img inline-block" src="https://crests.football-data.org/iraq.svg">
+    <span class="hidden align-middle md:inline-block sm:inline-block">
+      Iraq
+    </span>
+    <span class="inline-block sm:hidden">IRQ</span>
+  </span>
+</div>
+          </td>
+          <td>3</td>
+          <td>0</td>
+          <td>-11</td>
+          <td>
+            1:12
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+  </div>
+  <div class="mb-6">
+    <div class="lg:col-span-2 shadow-xl rounded-md">
+  <div class="p-4">
+    <h3 class="text-base font-semibold leading-6 text-gray-200">Scorers</h3>
+    <table id="top_scorer_table" class="table table-xs">
+      <thead>
+        <th></th>
+        <th>Team</th>
+        <th class="text-center">
+          <div class="tooltip tooltip-bottom" data-tip="Scorer points">S</div>
+        </th>
+        <th class="text-center">
+          <div class="tooltip tooltip-bottom" data-tip="Goals">G</div>
+        </th>
+        <th class="text-center">
+          <div class="tooltip tooltip-bottom" data-tip="Assists">A</div>
+        </th>
+        <th class="text-center">
+          <div class="tooltip tooltip-bottom" data-tip="avg scorer / match">&#8960; sc</div>
+        </th>
+        <th class="text-center">
+          <div class="tooltip tooltip-bottom" data-tip="avg goals / match">&#8960; g</div>
+        </th>
+        <th class="text-center">
+          <div class="tooltip tooltip-left" data-tip="avg minutes to assist or score">⏱️/sc</div>
+        </th>
+        <th class="text-center">
+          <div class="tooltip tooltip-left" data-tip="avg minutes to score">⏱️/g</div>
+        </th>
+      </thead>
+      <tbody>
+        <tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            1.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/3218&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/762.png">
+              <span class="pl-2">Lionel Messi</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            10
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            8
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            2
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.25
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            71.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            88.75
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            2.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/3374&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/773.svg">
+              <span class="pl-2">Kylian Mbappé</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            10
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            8
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            2
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.25
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            69.71
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            87.13
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            3.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/38101&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/813.svg">
+              <span class="pl-2">Erling Haaland</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            7
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            7
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            68.58
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            68.58
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            4.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/125010&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/770.svg">
+              <span class="pl-2">Jude Bellingham</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            7
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            6
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.86
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            86.43
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            100.84
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            5.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/8004&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/770.svg">
+              <span class="pl-2">Harry Kane</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            7
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            6
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.86
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            93.43
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            109.0
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            6.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/3373&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/773.svg">
+              <span class="pl-2">Ousmane Dembélé</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            7
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            5
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            2
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.72
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            78.86
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            110.41
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            7.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/3638&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/senegal.svg">
+              <span class="pl-2">Ismaïla Sarr</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            5
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.25
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            73.21
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            91.5
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            8.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/39237&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/769.svg">
+              <span class="pl-2">Julián Quiñones</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            5
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.81
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            82.8
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            103.5
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            9.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/1556&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/764.svg">
+              <span class="pl-2">Vinicius Junior</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            5
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.81
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            88.21
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            110.25
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            10.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/180137&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/760.svg">
+              <span class="pl-2">Mikel Oyarzabal</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            5
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.63
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.5
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            130.2
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            162.75
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            11.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/30842&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/764.svg">
+              <span class="pl-2">Matheus Cunha</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.6
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.6
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            97.67
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            97.67
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            12.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/7459&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/8601.svg">
+              <span class="pl-2">Cody Gakpo</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            93.25
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            124.34
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            13.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/129947&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/805.svg">
+              <span class="pl-2">Charles De Ketelaere</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.81
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.6
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            107.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            142.67
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            14.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/3662&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/805.svg">
+              <span class="pl-2">Romelu Lukaku</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            4
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.81
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.6
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            38.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            51.67
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            15.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/171&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/759.svg">
+              <span class="pl-2">Kai Havertz</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            118.34
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            118.34
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            16.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/3305&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/769.svg">
+              <span class="pl-2">Raúl Jiménez</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            106.34
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            106.34
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            17.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/612&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/congo_dr.svg">
+              <span class="pl-2">Yoane Wissa</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            120.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            120.0
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            18.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/6928&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/759.svg">
+              <span class="pl-2">Deniz Undav</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            5
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            2
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.25
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            29.81
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            49.67
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            19.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/212309&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/788.svg">
+              <span class="pl-2">Johan Manzambi</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            5
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            2
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            1.25
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.75
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            40.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            66.67
+          </td>
+        </tr><tr }>
+          <td class="text-center whitespace-nowrap py-0.5 text-sm font-extralight text-gray-200 sm:pl-3">
+            20.
+          </td>
+          <td class="text-center whitespace-nowrap py-0.5 pl-4 pr-3 text-sm font-extralight text-gray-200 sm:pl-3">
+            <div class="flex hover:cursor-pointer" phx-click="[[&quot;navigate&quot;,{&quot;replace&quot;:false,&quot;href&quot;:&quot;/person/44&quot;}]]">
+              <img class="max-h-5" src="https://crests.football-data.org/765.svg">
+              <span class="pl-2">Cristiano Ronaldo</span>
+            </div>
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            3
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.6
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            0.6
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            147.0
+          </td>
+          <td class="whitespace-nowrap text-center py-0.5 text-sm text-gray-300">
+            147.0
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  </div>
+</div></div>
+    </main>
+
+    <footer class="fixed bottom-0 w-full bg-black">
+      <div class="text-white text-center text-sm font-light">
+        For the <span style="color: #0360b7">&#x1F499;&#xfe0e;</span> of the game. | 2021-25
+      </div>
+    </footer>
+
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  </body>
+</html>
